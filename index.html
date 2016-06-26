@@ -4,30 +4,119 @@
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://use.fontawesome.com/9263e0c41c.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body ng-app="nsawApp">
-  <div layout="row">
-    <md-card flex="33">
-     <md-card-content>
-       <h2>Card headline</h2>
-       <p>Card content</p>
-     </md-card-content>
-     <md-card-footer>
-       Card footer
-     </md-card-footer>
-    </md-card>
-    <md-card flex="66">
- <md-card-content>
-   <h2>Card headline</h2>
-   <p>Card content</p>
- </md-card-content>
- <md-card-footer>
-   Card footer
- </md-card-footer>
-</md-card>
+<body ng-app="nsawApp" ng-cloak layout="column">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <md-button class="hideOnLarge" ng-controller ="openSideNav" ng-click="openLeftMenu()">
+        <i class="material-icons">view_list</i></md-button>
+      <span class="responsiveButton">Nsaw</span>
+      <!-- fill up the space between left and right area -->
+      <md-button class="hideOnSmall">Physics</md-button>
+      <md-button class="hideOnSmall">Chemistry</md-button>
+      <md-button class="hideOnSmall">Biology</md-button>
+      <md-autocomplete class="hideOnSmall" flex required md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+  <span md-highlight-text="searchText">{{item.display}}</span>
+</md-autocomplete>
+      <md-button class="hideOnSmall">Shopping Cart</md-button>
+      <md-button class="hideOnSmall">Login</md-button>
+      <md-button class="hideOnSmall">About Us</md-button>
+    </div>
+  </md-toolbar>
+  <!-- Content -->
+       <md-sidenav md-component-id="left" class="md-sidenav-left" layout="column">
+         <md-button flex>Biology</md-button>
+         <md-button flex>Biology</md-button>
+         <md-button flex>Biology</md-button>
+         <md-button flex>Biology</md-button>
+         <md-button flex>Biology</md-button>
+       </md-sidenav>
+
+       <md-content>
+       <div layout ="row" layout-xs="column" layout-sm="column" layout-align ="space-around" layout-align-xs="space-around">
+      <md-card flex="auto" md-theme-watch>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Card with image</span>
+              <span class="md-subhead">Extra Large</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content layout="row" layout-align="space-between">
+            <div class="md-media-xl card-media"></div>
+            <md-card-actions layout="column">
+              <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+              </md-button>
+              <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+              </md-button>
+              <md-button class="md-icon-button" aria-label="Share">
+                <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+              </md-button>
+            </md-card-actions>
+          </md-card-content>
+        </md-card>
+       <!--End of Card 1 -->
+      <!-- Card 2 -->
+
+      <md-card flex="auto" md-theme-watch>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Card with image</span>
+              <span class="md-subhead">Extra Large</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content layout="row" layout-align="space-between">
+            <div class="md-media-xl card-media"></div>
+            <md-card-actions layout="column">
+              <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+              </md-button>
+              <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+              </md-button>
+              <md-button class="md-icon-button" aria-label="Share">
+                <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+              </md-button>
+            </md-card-actions>
+          </md-card-content>
+        </md-card>
+     <!--End of Card 2 -->
+
+     <!-- Card 3-->
+     <md-card flex="auto" md-theme-watch>
+         <md-card-title>
+           <md-card-title-text>
+             <span class="md-headline">Card with image</span>
+             <span class="md-subhead">Extra Large</span>
+           </md-card-title-text>
+         </md-card-title>
+         <md-card-content layout="row" layout-align="space-between">
+           <div class="md-media-xl card-media"></div>
+           <md-card-actions layout="column">
+             <md-button class="md-icon-button" aria-label="Favorite">
+               <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+             </md-button>
+             <md-button class="md-icon-button" aria-label="Settings">
+               <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+             </md-button>
+             <md-button class="md-icon-button" aria-label="Share">
+               <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+             </md-button>
+           </md-card-actions>
+         </md-card-content>
+       </md-card>
+   </div>
+    </md-content>
+
+
+
+
+
 
 
 

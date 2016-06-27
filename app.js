@@ -9,3 +9,7 @@
       $mdSidenav('left').toggle();
     };
   });
+
+  app.controller('StoreController', function(){
+    this.products = physics;
+  });

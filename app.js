@@ -11,5 +11,23 @@
   });
 
   app.controller('StoreController', function(){
-    this.products = physics;
+
+    this.tab =1;
+    this.setTab = function(newValue)
+    {
+      this.tab = newValue;
+      if(this.tab == 1)
+      {
+        this.products = physics;
+      }
+      else if(this.tab == 2)
+      {
+        this.products = chemistry;
+      }
+      else if(this.tab == 3)
+      {
+        this.products = bio;
+      }
+    };
+
   });

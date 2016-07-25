@@ -11,14 +11,8 @@
     };
   });
 
-  /*app.controller('closeNav', function($scope, $mdSidenav){
-    $scope.closeOnClick = function(){
-      $mdSidenav('left').close();
-    }
-  })*/
-
+  /*Controller to grab the product category based on the product selected from sidenav*/
   app.controller('StoreController', function($scope, $mdMedia, $mdSidenav){
-
     this.tab =1;
     this.setTab = function(newValue)
     {
@@ -41,4 +35,8 @@
       }
     };
 
+  });
+
+  app.controller('searchController', function($scope) {
+      $scope.name = "";
   });

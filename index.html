@@ -9,15 +9,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body ng-app="nsawApp" ng-cloak layout="column" ng-controller ="openSideNav">
+<body ng-app="nsawApp" ng-cloak layout="column" ng-controller="searchController as searchCtrl">
 
-  <div layout="row" layout-padding>
-    <md-button md-whiteframe="5" class="hideOnLarge" ng-click="openLeftMenu()">
-      <i class="material-icons">view_list</i>
-    </md-button>
-    <md-toolbar class="hideOnSmall">
-      <div class="md-toolbar-tools hideOnSmall">
-        <span class="hideOnSmall">Nsaw</span>
+  <div layout="row" ng-controller ="openSideNav">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button md-whiteframe="5" class="hideOnLarge" ng-click="openLeftMenu()">
+          <i class="material-icons">view_list</i> </md-button>
+        <span id="brand">Nsaw</span>
+        <md-input-container flex class="positionToolbar">
+          <md-icon><i class="material-icons">search</i></md-icon>
+          <input style="background-color:white;" id="searchBar"
+          ng-model="searchCtrl.name" type="text" placeholder="Search Products">
+        </md-input-container>
       </div>
     </md-toolbar>
   </div>
@@ -26,15 +30,19 @@
          <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
          class="md-sidenav-left" md-disable-backdrop md-whiteframe="4">
            <md-content>
+             <md-toolbar><span class="toolText">Nsaw</span></md-toolbar>
              <ul>
-             <li><md-autocomplete layout-margin md-selected-item="selectedItem" md-search-text="searchText"
-             md-items="item in getMatches(searchText)" md-item-text="item.display" placeholder ="Search">
-             <span md-highlight-text="searchText">{{item.display}}</span></md-autocomplete></li>
              <li><md-button ng-click="store.setTab(1)" flex>Physics</md-button></li>
              <li><md-button ng-click ="store.setTab(2)" flex >Chemistry</md-button></li>
              <li><md-button ng-click ="store.setTab(3)" flex>Biology</md-button></li>
-             <li><md-button flex>Shopping Cart</md-button></li>
+             <li><md-button ng-click ="store.setTab(4)" flex>Plasticware</md-button></li>
+             </ul>
+             <div class="divider"></div>
+            <ul>
              <li><md-button flex>Login</md-button></li>
+             <li><md-button flex>Shopping Cart</md-button></li>
+             <li><md-button flex>About Us</md-button></li>
+             <li><md-button flex>Contact Us</md-button></li>
            </ul>
            </md-content>
        </md-sidenav>
@@ -42,7 +50,7 @@
 
        <md-content flex>
        <div layout ="row" layout-xs="column" layout-sm="column">
-      <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch>
+      <md-card ng-hide="searchCtrl.hide" flex="auto" ng-repeat ="product in store.products" md-theme-watch>
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">{{product.name}}</span>
@@ -68,6 +76,31 @@
     </md-content>
  </div>
 
+ <div layout ="row" layout-xs="column" layout-sm="column">
+ <md-card flex="auto" md-theme-watch>
+     <md-card-title>
+       <md-card-title-text>
+         <span class="md-headline">{{searchCtrl.name}}</span>
+         <span class="md-subhead">Extra Large</span>
+       </md-card-title-text>
+     </md-card-title>
+     <md-card-content layout="row" layout-align="space-between">
+       <div class="md-media-xl card-media"></div>
+       <md-card-actions layout="column">
+         <md-button class="md-icon-button" aria-label="Favorite">
+           <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+         </md-button>
+         <md-button class="md-icon-button" aria-label="Settings">
+           <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+         </md-button>
+         <md-button class="md-icon-button" aria-label="Share">
+           <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+         </md-button>
+       </md-card-actions>
+     </md-card-content>
+   </md-card>
+  </div>
+
 
 
 
@@ -87,6 +120,7 @@
   <script src="catalog/physics.js"></script>
   <script src="catalog/chemistry.js"></script>
   <script src="catalog/biology.js"></script>
+  <script src="js/custom.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

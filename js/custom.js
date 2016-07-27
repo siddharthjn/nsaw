@@ -1,4 +1,4 @@
-function isSearchFound(){
+/*function isSearchFound(){
   $("#searchBar").on("input", function() {
   var searchVal = $("#searchBar").val();
   console.log(searchVal);
@@ -16,4 +16,4 @@ function isSearchFound(){
   }
  });
 }
-isSearchFound();
+isSearchFound(); */

@@ -37,6 +37,26 @@
 
   });
 
-  app.controller('searchController', function($scope) {
+ /*Controller for search results */
+  app.controller('searchController', ['$scope',function($scope) {
       $scope.name = "";
-  });
+      $scope.hideSearchResult = false;
+      $scope.isSearchFound = function() {
+        var searchVal = document.getElementById("searchBar").value;
+        console.log(searchVal);
+        var searchVal = document.getElementById("searchBar").value;
+        console.log(searchVal);
+        for(var i=0; i< physics.length; i++)
+        { //if input value(upper or lowercase) is a substring and not empty
+          if(searchVal!=="")
+          {
+            if(physics[i].name.indexOf(searchVal)!== -1 ||
+            physics[i].name.toLowerCase().indexOf(searchVal)!== -1)
+            {
+              return $scope.hideSearchResult = true;
+          }
+            else{return $scope.hideSearchResult =false;} }
+          else{return $scope.hideSearchResult = false;}
+        }
+      };
+  }]);

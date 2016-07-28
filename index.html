@@ -19,7 +19,7 @@
         <span id="brand">Nsaw</span>
         <md-input-container flex class="positionToolbar">
           <md-icon><i class="material-icons">search</i></md-icon>
-          <input style="background-color:white;" id="searchBar" ng-change ="isSearchFound()"
+          <input style="background-color:white;" id="searchBar" ng-change ="isSearchNotFound();isSearchFound()"
           ng-model="searchCtrl.name" type="text" placeholder="Search Products">
         </md-input-container>
       </div>
@@ -76,11 +76,12 @@
     </md-content>
     <!--search Result -->
     <md-content ng-hide="!hideSearchResult" flex>
-    <div layout ="row" layout-xs="column" layout-sm="column">
+    <div layout ="row" layout-xs="column" layout-sm="column"
+    ng-repeat ="prodSearchName in prodSearchNames">
     <md-card flex="auto" md-theme-watch>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{searchCtrl.name}}</span>
+            <span class="md-headline">{{prodSearchName}}</span>
             <span class="md-subhead">Extra Large</span>
           </md-card-title-text>
         </md-card-title>

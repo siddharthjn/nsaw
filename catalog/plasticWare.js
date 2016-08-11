@@ -1,0 +1,5 @@
+var plasticWare = [
+  {img:"image/beakersEurodesign.jpg",name :"BEAKER( EURO DESIGN)", price:100, description : "EURO design Beakers, moulded in Polypropylene, too have excellent clarity and very good chemical resistance. These autoclavable Beakers also have prominently raised graduations on the outer surface.It's tapered spout is very helpful in conveniently pouring the solutions"},
+  {img:"image/beakers.png",name :"BEAKERS", price: 100, description:"Beakers, moulded in Polypropylene, have excellent clarity and very good chemical resistance. These autoclavable Beakers have prominently raised graduations on the outer surface. Pouring a solution becomes very convenient because of its tapered spout."},
+  {img:"image/burette.jpg",name :"BURETTE", price : 100, description: "This Burette has a transparent acrylic pipe and a leak proof TPX stopcock fitted with a self lubricating PTFE plug. Each Burette is individually calibrated to give maximum accuracy. Acrylic body is unaffected by dilute mineral acids & bases except Hydrofluoric acide & Ammonium Hydroxide. The pH range of 1-14 is ideal and can be used up to 5%wt/wt of acids or 30% bases."}
+];

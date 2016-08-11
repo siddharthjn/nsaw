@@ -48,30 +48,30 @@
        </md-sidenav>
 
 
-       <md-content ng-hide="hideSearchResult" flex>
+       <md-content ng-hide="hideSearchResult" flex ng-controller="tabController as tabCtrl">
        <div layout ="row" layout-xs="column" layout-sm="column">
       <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch>
+        <div layout="column">
+        <md-card-header flex="30">
+        <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out">
+      </md-card-header>
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">{{product.name}}</span>
-              <span class="md-subhead">Extra Large</span>
+              <div layout="row">
+              <md-button flex ="33" ng-click ="tabCtrl.setTabVal(1)">Info</md-button>
+              <md-button flex="33" ng-click="tabCtrl.setTabVal(2)">Price</md-button>
+              <md-button flex ="33"ng-click="tabCtrl.setTabVal(3)">Specs</md-button>
+            </div>
             </md-card-title-text>
           </md-card-title>
           <md-card-content layout="row" layout-align="space-between">
-            <div class="md-media-xl card-media"></div>
-            <md-card-actions layout="column">
-              <md-button class="md-icon-button" aria-label="Favorite">
-                <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" aria-label="Settings">
-                <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" aria-label="Share">
-                <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-              </md-button>
-            </md-card-actions>
+            <div ng-show="tabCtrl.showDesc">{{product.description}}</div>
+            <div ng-show="tabCtrl.showPrice">{{product.price}}</div>
+            <!--<div ng-show="tabCtrl.tab=3">{{product.}}</div>-->
           </md-card-content>
         </md-card>
+      </div>
        </div>
     </md-content>
     <!--search Result -->
@@ -115,6 +115,7 @@
   <script src="catalog/physics.js"></script>
   <script src="catalog/chemistry.js"></script>
   <script src="catalog/biology.js"></script>
+  <script src="catalog/plasticWare.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

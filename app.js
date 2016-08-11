@@ -33,8 +33,31 @@
       {
         this.products = bio;
       }
+      else if(this.tab == 4)
+      {
+        this.products = plasticWare;
+      }
     };
 
+  });
+
+  /*to grab tab category */
+  app.controller('tabController', function(){
+    this.tabVal = 1;
+    this.showDesc =true;
+    this.showPrice = false;
+    this.setTabVal = function(newTabValue){
+      this.tabVal = newTabValue;
+      if(this.tabVal ==1)
+      {
+        this.showDesc =true;
+        this.showPrice = false;
+      }
+      else{
+        this.showDesc =false;
+        this.showPrice = true;
+      }
+    };
   });
 
  /*for search results */

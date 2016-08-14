@@ -50,10 +50,10 @@
        </md-sidenav>
 
 
-       <md-content ng-hide="hideSearchResult" flex ng-controller="cardController as cardCtrl">
+       <md-content ng-hide="hideSearchResult" flex>
        <div layout ="row" layout-xs="column" layout-sm="column">
       <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch
-      ng-class="{ 'selected-item': $index == selectedUserIndex}">
+      ng-class="{ 'selected-item': $index == selectedUserIndex}" ng-controller="cardController as cardCtrl">
         <div layout="column">
         <md-card-header flex="30">
         <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out">
@@ -96,8 +96,8 @@
           </md-button>
         </md-card-actions>
         <!-- icons-->
+          </div>
         </md-card>
-      </div>
        </div>
     </md-content>
     <!--search Result -->

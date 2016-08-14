@@ -50,9 +50,10 @@
        </md-sidenav>
 
 
-       <md-content ng-hide="hideSearchResult" flex ng-controller="tabController as tabCtrl">
+       <md-content ng-hide="hideSearchResult" flex ng-controller="cardController as cardCtrl">
        <div layout ="row" layout-xs="column" layout-sm="column">
-      <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch>
+      <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch
+      ng-class="{ 'selected-item': $index == selectedUserIndex}">
         <div layout="column">
         <md-card-header flex="30">
         <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out">
@@ -61,20 +62,19 @@
             <md-card-title-text>
               <span class="md-headline">{{product.name}}</span>
               <div layout="row">
-              <md-button flex ="33" ng-click ="tabCtrl.setTabVal(1)">Info</md-button>
-              <md-button flex="33" ng-click="tabCtrl.setTabVal(2)">Price</md-button>
-              <md-button flex ="33"ng-click="tabCtrl.setTabVal(3)">Specs</md-button>
+              <md-button flex ="33" ng-click ="cardCtrl.setTabVal(1)">Info</md-button>
+              <md-button flex="33" ng-click="cardCtrl.setTabVal(2)">Price</md-button>
+              <md-button flex ="33"ng-click="cardCtrl.setTabVal(3)">Specs</md-button>
             </div>
             </md-card-title-text>
           </md-card-title>
           <md-card-content layout="row" layout-align="space-between">
-            <div ng-show="tabCtrl.showDesc">{{product.description}}</div>
-            <div ng-show="tabCtrl.showPrice">{{product.price}}</div>
-            <!--<div ng-show="tabCtrl.tab=3">{{product.}}</div>-->
+            <div ng-show="cardCtrl.showDesc">{{product.description}}</div>
+            <div ng-show="cardCtrl.showPrice">{{product.price}}</div>
+            <!--<div ng-show="cardCtrl.tab=3">{{product.}}</div>-->
           </md-card-content>
           <!-- icons -->
-          <md-card-actions layout="row" layout-align="end center"
-          ng-controller ="iconChanger as iconCtrl">
+          <md-card-actions layout="row" layout-align="end center" ng-controller ="iconChanger as iconCtrl">
           <md-button class="md-icon-button" ng-click ="iconCtrl.changeIcon(1);" aria-label="Favorite"
           ng-hide="iconCtrl.heartChange">
             <i class="material-icons">favorite_border</i>
@@ -83,8 +83,7 @@
           ng-show ="iconCtrl.heartChange">
             <i class="material-icons">favorite</i>
           </md-button>
-          <md-button class="md-icon-button" aria-label="Settings"
-          ng-click ="iconCtrl.changeIcon(3)">
+          <md-button class="md-icon-button" aria-label="Settings" ng-click ="selectUserIndex($index)">
             <i class="material-icons">view_headline</i>
           </md-button>
           <md-button class="md-icon-button" aria-label="addTo shopping list"

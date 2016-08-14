@@ -42,10 +42,15 @@
   });
 
   /*to grab tab category */
-  app.controller('tabController', function(){
+  app.controller('cardController', function($scope, $mdToast){
     this.tabVal = 1;
     this.showDesc =true;
     this.showPrice = false;
+    /*this.icon = 0;
+    this.heartChange = false;
+    this.menuChange = false;
+    this.plusChange = false;*/
+
     this.setTabVal = function(newTabValue){
       this.tabVal = newTabValue;
       if(this.tabVal ==1)
@@ -58,6 +63,42 @@
         this.showPrice = true;
       }
     };
+
+    /*this.changeIcon = function(newIconVal)
+    {
+      this.icon = newIconVal;
+      if(this.icon ==1)
+      {
+        this.heartChange =true;
+          $mdToast.show($mdToast.simple().textContent('Item added to wishlist'));
+      }
+      if(this.icon ==2)
+      {
+        this.heartChange =false;
+          $mdToast.show($mdToast.simple().textContent('Item removed from wishlist'));
+      }
+      if(this.icon ==5)
+      {
+        this.plusChange =true;
+        $mdToast.show($mdToast.simple().textContent('Item added to shoppinglist'));
+      }
+      if(this.icon ==6)
+      {
+        this.plusChange =false;
+        $mdToast.show($mdToast.simple().textContent('Item removed from shoppinglist'));
+      }
+    };*/
+
+    $scope.selectedUserIndex = undefined;
+    $scope.selectUserIndex = function (index) {
+      if ($scope.selectedUserIndex !== index) {
+        $scope.selectedUserIndex = index;
+      }
+      else {
+        $scope.selectedUserIndex = undefined;
+      }
+    };
+
   });
 
  /*for search results */
@@ -100,7 +141,7 @@
       };
   }]);
 
-  /* icon change */
+
   app.controller('iconChanger', function($scope, $mdToast){
     this.icon = 0;
     this.heartChange = false;
@@ -130,6 +171,8 @@
         $mdToast.show($mdToast.simple().textContent('Item removed from shoppinglist'));
       }
     };
+
+
   });
 
 /*  app.directive('headToolbar', function(){

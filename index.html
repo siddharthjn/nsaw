@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://use.fontawesome.com/9263e0c41c.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -24,7 +24,9 @@
         </md-input-container>
       </div>
     </md-toolbar>
+
   </div>
+
   <!-- Content -->
       <div flex ng-controller ="StoreController as store" layout="row" layout-padding layout-margin layout-fill>
          <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
@@ -70,6 +72,31 @@
             <div ng-show="tabCtrl.showPrice">{{product.price}}</div>
             <!--<div ng-show="tabCtrl.tab=3">{{product.}}</div>-->
           </md-card-content>
+          <!-- icons -->
+          <md-card-actions layout="row" layout-align="end center"
+          ng-controller ="iconChanger as iconCtrl">
+          <md-button class="md-icon-button" ng-click ="iconCtrl.changeIcon(1);" aria-label="Favorite"
+          ng-hide="iconCtrl.heartChange">
+            <i class="material-icons">favorite_border</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Favorite" ng-click ="iconCtrl.changeIcon(2)"
+          ng-show ="iconCtrl.heartChange">
+            <i class="material-icons">favorite</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Settings"
+          ng-click ="iconCtrl.changeIcon(3)">
+            <i class="material-icons">view_headline</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="addTo shopping list"
+          ng-click ="iconCtrl.changeIcon(5)" ng-hide="iconCtrl.plusChange">
+            <i class="material-icons">add_circle_outline</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="added To shopping list"
+          ng-click ="iconCtrl.changeIcon(6)" ng-show ="iconCtrl.plusChange">
+            <i class="material-icons">add_circle</i>
+          </md-button>
+        </md-card-actions>
+        <!-- icons-->
         </md-card>
       </div>
        </div>
@@ -112,10 +139,15 @@
 
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <!--catalog-->
   <script src="catalog/physics.js"></script>
   <script src="catalog/chemistry.js"></script>
   <script src="catalog/biology.js"></script>
   <script src="catalog/plasticWare.js"></script>
-  <script src="app.js"></script>
+
+  <!--custom js-->
+  <script type="text/ng-template" id="template/head-toolbar.html"></script>
+  <script src="js/app.js"></script>
+
 </body>
 </html>

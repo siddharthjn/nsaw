@@ -28,5 +28,8 @@
     "grunt-processhtml": "^0.3.13",
     "grunt-serve": "^0.1.6",
     "grunt-string-replace": "^1.2.1"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }

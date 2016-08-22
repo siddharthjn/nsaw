@@ -24,18 +24,66 @@
       if(this.tab == 1)
       {
         this.products = physics;
+        $scope.physCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
+        $scope.chemCol = {
+          "background-color" : "white"
+        };
+        $scope.bioCol = {
+          "background-color" : "white"
+        };
+        $scope.plasCol = {
+          "background-color" : "white"
+        };
       }
       else if(this.tab == 2)
       {
         this.products = chemistry;
+        $scope.physCol = {
+          "background-color" : "white"
+        };
+        $scope.chemCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
+        $scope.bioCol = {
+          "background-color" : "white"
+        };
+        $scope.plasCol = {
+          "background-color" : "white"
+        };
       }
       else if(this.tab == 3)
       {
         this.products = bio;
+        $scope.physCol = {
+          "background-color" : "white"
+        };
+        $scope.chemCol = {
+          "background-color" : "white"
+        };
+        $scope.bioCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
+        $scope.plasCol = {
+          "background-color" : "white"
+        };
       }
       else if(this.tab == 4)
       {
         this.products = plasticWare;
+        $scope.physCol = {
+          "background-color" : "white"
+        };
+        $scope.chemCol = {
+          "background-color" : "white"
+        };
+        $scope.bioCol = {
+          "background-color" : "white"
+        };
+        $scope.plasCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
       }
     };
 
@@ -47,6 +95,9 @@
     this.showDesc =true;
     this.showPrice = false;
     this.showSpec = false;
+    $scope.infoCol = {
+      "background-color" : "rgb(95, 218, 204)"
+    };
 
     this.setTabVal = function(newTabValue){
       this.tabVal = newTabValue;
@@ -55,16 +106,43 @@
         this.showDesc =true;
         this.showPrice = false;
         this.showSpec = false;
+        $scope.infoCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
+        $scope.priceCol = {
+          "background-color" : "white"
+        };
+        $scope.specsCol = {
+          "background-color" : "white"
+        };
       }
       else if(this.tabVal ==2){
         this.showDesc =false;
         this.showPrice = true;
         this.showSpec = false;
+        $scope.infoCol = {
+          "background-color" : "white"
+        };
+        $scope.priceCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
+        $scope.specsCol = {
+          "background-color" : "white"
+        };
       }
       else{
         this.showDesc =false;
         this.showPrice = false;
         this.showSpec = true;
+        $scope.infoCol = {
+          "background-color" : "white"
+        };
+        $scope.priceCol = {
+          "background-color" : "white"
+        };
+        $scope.specsCol = {
+          "background-color" : "rgb(95, 218, 204)"
+        };
       }
     };
 

@@ -35,10 +35,10 @@
            <md-content>
              <md-toolbar><span class="toolText">Nsaw</span></md-toolbar>
              <ul>
-             <li><md-button ng-click="store.setTab(1)" flex>Physics</md-button></li>
-             <li><md-button ng-click ="store.setTab(2)" flex >Chemistry</md-button></li>
-             <li><md-button ng-click ="store.setTab(3)" flex>Biology</md-button></li>
-             <li><md-button ng-click ="store.setTab(4)" flex>Plasticware</md-button></li>
+             <li><md-button ng-style ="physCol" ng-click="store.setTab(1)" flex>Physics</md-button></li>
+             <li><md-button ng-style ="chemCol" ng-click ="store.setTab(2)" flex >Chemistry</md-button></li>
+             <li><md-button ng-style ="bioCol" ng-click ="store.setTab(3)" flex>Biology</md-button></li>
+             <li><md-button ng-style ="plasCol"ng-click ="store.setTab(4)" flex>Plasticware</md-button></li>
              </ul>
              <div class="divider"></div>
            </md-content>
@@ -57,9 +57,9 @@
             <md-card-title-text>
               <span class="md-headline">{{product.name}}</span>
               <div layout="row">
-              <md-button flex ="33" ng-click ="cardCtrl.setTabVal(1)">Info</md-button>
-              <md-button flex="33" ng-click="cardCtrl.setTabVal(2)">Price</md-button>
-              <md-button flex ="33"ng-click="cardCtrl.setTabVal(3)">Specs</md-button>
+              <md-button ng-style ="infoCol"flex ="33" ng-click ="cardCtrl.setTabVal(1)">Info</md-button>
+              <md-button ng-style ="priceCol" flex="33" ng-click="cardCtrl.setTabVal(2)">Price</md-button>
+              <md-button ng-style ="specsCol" flex ="33"ng-click="cardCtrl.setTabVal(3)">Specs</md-button>
             </div>
             </md-card-title-text>
           </md-card-title>

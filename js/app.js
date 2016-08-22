@@ -46,6 +46,7 @@
     this.tabVal = 1;
     this.showDesc =true;
     this.showPrice = false;
+    this.showSpec = false;
 
     this.setTabVal = function(newTabValue){
       this.tabVal = newTabValue;
@@ -53,10 +54,17 @@
       {
         this.showDesc =true;
         this.showPrice = false;
+        this.showSpec = false;
+      }
+      else if(this.tabVal ==2){
+        this.showDesc =false;
+        this.showPrice = true;
+        this.showSpec = false;
       }
       else{
         this.showDesc =false;
-        this.showPrice = true;
+        this.showPrice = false;
+        this.showSpec = true;
       }
     };
 

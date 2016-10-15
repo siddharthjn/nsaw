@@ -14,6 +14,7 @@
   /*to grab the product category based on the product selected from sidenav*/
   app.controller('StoreController', function($scope, $mdMedia, $mdSidenav){
     this.tab =1;
+    this.showAboutUs = false;
     this.setTab = function(newValue)
     {
       if ($mdMedia('xs') || $mdMedia('sm'))
@@ -23,67 +24,84 @@
       this.tab = newValue;
       if(this.tab == 1)
       {
+        this.showAboutUs = false;
         this.products = physics;
-        $scope.physCol = {
-          "background-color" : "rgb(95, 218, 204)"
-        };
-        $scope.chemCol = {
-          "background-color" : "white"
-        };
-        $scope.bioCol = {
-          "background-color" : "white"
-        };
-        $scope.plasCol = {
-          "background-color" : "white"
-        };
+        $scope.physCol = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
       }
       else if(this.tab == 2)
       {
+        this.showAboutUs = false;
         this.products = chemistry;
-        $scope.physCol = {
-          "background-color" : "white"
-        };
-        $scope.chemCol = {
-          "background-color" : "rgb(95, 218, 204)"
-        };
-        $scope.bioCol = {
-          "background-color" : "white"
-        };
-        $scope.plasCol = {
-          "background-color" : "white"
-        };
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
       }
       else if(this.tab == 3)
       {
+        this.showAboutUs = false;
         this.products = bio;
-        $scope.physCol = {
-          "background-color" : "white"
-        };
-        $scope.chemCol = {
-          "background-color" : "white"
-        };
-        $scope.bioCol = {
-          "background-color" : "rgb(95, 218, 204)"
-        };
-        $scope.plasCol = {
-          "background-color" : "white"
-        };
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
       }
       else if(this.tab == 4)
       {
+        this.showAboutUs = false;
         this.products = plasticWare;
-        $scope.physCol = {
-          "background-color" : "white"
-        };
-        $scope.chemCol = {
-          "background-color" : "white"
-        };
-        $scope.bioCol = {
-          "background-color" : "white"
-        };
-        $scope.plasCol = {
-          "background-color" : "rgb(95, 218, 204)"
-        };
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
+      }
+      else if(this.tab == 5){
+        this.showAboutUs = true;
+        this.products = null;
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
+      }
+      else if(this.tab == 6){
+        this.products = null;
+        this.showAboutUs = false;
+        $scope.physCol = { "background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.careers = {"background-color" : "white"};
+      }
+      else if(this.tab == 7){
+        this.showAboutUs = false;
+        this.products = null;
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "white"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "rgb(95, 218, 204)"};
       }
     };
 

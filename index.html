@@ -9,6 +9,8 @@
   <script src="https://use.fontawesome.com/9263e0c41c.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <link rel="stylesheet" href="node_modules/angular-timeline/dist/angular-timeline.css"/>
+
 </head>
 <body ng-app="nsawApp" ng-cloak layout="column" ng-controller="searchController as searchCtrl">
 
@@ -132,9 +134,29 @@
 
      <!-- About Us -->
      <md-content flex ng-show ="store.showAboutUs" ng-hide="hideSearchResult;!store.showAboutUs">
-     <div layout ="row" layout-xs="column" layout-sm="column">Welcome to the world of M/s National Scientific Apparatus Works, one of the leading Manufacturers of today. Our company Manufacture and Supply an exclusive range of high optimum quality products, which are available nowhere else. Your premium range of products encompasses of Biochemistry Equipment, Biology Equipment, Civil Engineering Surveying Equipment, Educational Meters, Electronic Products, Laboratory Glassware, etc. Our company is bestowed with a highly experienced team of professionals, which make 100% precise and accurate products. We also have state-of-the art technology equipped in our infrastructure, which also takes of our quality standards.
+     <div layout ="column" layout-xs="column" layout-sm="column">Welcome to the world of M/s National Scientific Apparatus Works, one of the leading Manufacturers of today.
+       Our company Manufacture and Supply an exclusive range of high optimum quality products, which are available nowhere else. Your premium range of products encompasses of Biochemistry Equipment, Biology Equipment, Civil Engineering Surveying Equipment, Educational Meters, Electronic Products, Laboratory Glassware, etc. Our company is bestowed with a highly experienced team of professionals, which make 100% precise and accurate products.
+       We also have state-of-the art technology equipped in our infrastructure, which also takes of our quality standards.
 
-We introduce “NATIONAL SCIENTIFIC APPARATUS WORKS” established in 1964 as a company backed by more than four decades of manufacturing experience in the field of scientific/laboratory equipment and educational aids. Our company supplies products to some of the major states of India such as Gujarat, Madhya Pradesh, Maharashtra, Chennai etc. We are a total customer driven organization and we strive hard to fulfill all the demands of our customers. Our company is capable of providing customized products according to the specifications of our customers. We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays. Further, our company aims to increase its list of clientele and serve each one of them with utmost care.
+We introduce “NATIONAL SCIENTIFIC APPARATUS WORKS” established in 1964 as a company backed by more than four decades of manufacturing experience in the field of scientific/laboratory equipment and educational aids.
+Our company supplies products to some of the major states of India such as Gujarat, Madhya Pradesh, Maharashtra, Chennai etc.
+We are a total customer driven organization and we strive hard to fulfill all the demands of our customers. Our company is capable of providing customized products according to the specifications of our customers.
+We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays.
+Further, our company aims to increase its list of clientele and serve each one of them with utmost care.
+
+<timeline>
+   <timeline-event ng-repeat="event in events" side="right">
+     <timeline-badge class="{{event.badgeClass}}">
+       <i class="glyphicon {{event.badgeIconClass}}"></i>
+     </timeline-badge>
+     <timeline-panel class="{{event.badgeClass}}">
+       <timeline-heading>
+         <h4>{{event.title}}</h4>
+       </timeline-heading>
+       <p>{{event.content}}</p>
+     </timeline-panel>
+   </timeline-event>
+ </timeline>
 </div> </md-content>
      <!-- About Us -->
 
@@ -165,6 +187,7 @@ We introduce “NATIONAL SCIENTIFIC APPARATUS WORKS” established in 1964 as a 
   <!--custom js-->
   <script type="text/ng-template" id="template/head-toolbar.html"></script>
   <script src="js/app.js"></script>
+  <script src="node_modules/angular-timeline/dist/angular-timeline.js"></script>
 
 </body>
 </html>

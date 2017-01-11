@@ -1,7 +1,7 @@
   /**
    * You must include the dependency on 'ngMaterial'
    */
-  app = angular.module('nsawApp', ['ngMaterial', 'angular-timeline']);
+  app = angular.module('nsawApp', ['ngMaterial']);
   console.log('app ready');
 
   /*for the menu button to open the nav bar*/
@@ -80,17 +80,6 @@
         $scope.abtUs = {"background-color" : "rgb(95, 218, 204)"};
         $scope.contUs = {"background-color" : "white"};
         $scope.careers = {"background-color" : "white"};
-        $scope.events = [{
-      badgeClass: 'info',
-      badgeIconClass: 'glyphicon-check',
-      title: 'First heading',
-      content: 'Some awesome content.'
-    }, {
-      badgeClass: 'warning',
-      badgeIconClass: 'glyphicon-credit-card',
-      title: 'Second heading',
-      content: 'More awesome content.'
-    }];
       }
       else if(this.tab == 6){
         this.products = null;

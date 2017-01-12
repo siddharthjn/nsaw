@@ -9,7 +9,6 @@
   <script src="https://use.fontawesome.com/9263e0c41c.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-  <link rel="stylesheet" href="node_modules/angular-timeline/dist/angular-timeline.css"/>
 
 </head>
 <body ng-app="nsawApp" ng-cloak layout="column">
@@ -116,19 +115,7 @@ We are a total customer driven organization and we strive hard to fulfill all th
 We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays.
 Further, our company aims to increase its list of clientele and serve each one of them with utmost care.
 
-<timeline>
-   <timeline-event ng-repeat="event in events" side="right">
-     <timeline-badge class="{{event.badgeClass}}">
-       <i class="glyphicon {{event.badgeIconClass}}"></i>
-     </timeline-badge>
-     <timeline-panel class="{{event.badgeClass}}">
-       <timeline-heading>
-         <h4>{{event.title}}</h4>
-       </timeline-heading>
-       <p>{{event.content}}</p>
-     </timeline-panel>
-   </timeline-event>
- </timeline>
+
 </div> </md-content>
      <!-- About Us -->
 
@@ -159,7 +146,6 @@ Further, our company aims to increase its list of clientele and serve each one o
   <!--custom js-->
   <script type="text/ng-template" id="template/head-toolbar.html"></script>
   <script src="js/app.js"></script>
-  <script src="node_modules/angular-timeline/dist/angular-timeline.js"></script>
 
 </body>
 </html>

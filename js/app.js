@@ -1,7 +1,7 @@
   /**
    * You must include the dependency on 'ngMaterial'
    */
-  app = angular.module('nsawApp', ['ngMaterial', 'angular-timeline']);
+  app = angular.module('nsawApp', ['ngMaterial']);
   console.log('app ready');
 
   /*for the menu button to open the nav bar*/
@@ -76,6 +76,7 @@
       else if(this.tab == 5){
         this.showAboutUs = true;
         this.products = null;
+<<<<<<< HEAD
         changeButtonToWhite(button);
         button = abtUs;
         changeColorButton(button);
@@ -90,6 +91,15 @@
       title: 'Second heading',
       content: 'More awesome content.'
     }];
+=======
+        $scope.physCol = {"background-color" : "white"};
+        $scope.chemCol = {"background-color" : "white"};
+        $scope.bioCol = {"background-color" : "white"};
+        $scope.plasCol = {"background-color" : "white"};
+        $scope.abtUs = {"background-color" : "rgb(95, 218, 204)"};
+        $scope.contUs = {"background-color" : "white"};
+        $scope.careers = {"background-color" : "white"};
+>>>>>>> f4bca67db8d4e248214741484b356fe41fc60ce8
       }
       else if(this.tab == 6){
         this.products = null;

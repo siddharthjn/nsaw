@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="node_modules/angular-timeline/dist/angular-timeline.css"/>
 
 </head>
-<body ng-app="nsawApp" ng-cloak layout="column" ng-controller="searchController as searchCtrl">
+<body ng-app="nsawApp" ng-cloak layout="column">
 
   <div layout="row" ng-controller ="openSideNav">
     <md-toolbar>
@@ -22,8 +22,8 @@
         <span id="brand">Nsaw</span>
         <md-input-container flex class="positionToolbar">
           <md-icon><i class="material-icons">search</i></md-icon>
-          <input style="background-color:white;" id="searchBar" ng-change ="isSearchNotFound();isSearchFound()"
-          ng-model="searchCtrl.name" type="text" placeholder="Search Products">
+          <input style="background-color:white;" id="searchBar"
+          ng-model="search.name" type="text" placeholder="Search Products">
         </md-input-container>
       </div>
     </md-toolbar>
@@ -52,9 +52,9 @@
        </md-sidenav>
 
 
-       <md-content ng-hide="hideSearchResult;store.showAboutUs" flex>
+       <md-content ng-hide="store.showAboutUs" flex>
        <div layout ="row" layout-xs="column" layout-sm="column">
-      <md-card flex="auto" ng-repeat ="product in store.products" md-theme-watch
+      <md-card flex="auto" ng-repeat ="product in store.products | filter:search.name" md-theme-watch
       ng-class="{ 'selected-item': $index == selectedUserIndex}" ng-controller="cardController as cardCtrl">
         <div layout="column">
         <md-card-header flex="30">
@@ -103,37 +103,9 @@
         </md-card>
        </div>
     </md-content>
-    <!--search Result -->
-    <md-content ng-hide="!hideSearchResult;" flex>
-    <div layout ="row" layout-xs="column" layout-sm="column"
-    ng-repeat ="prodSearchName in prodSearchNames">
-    <md-card flex="auto" md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{prodSearchName}}</span>
-            <span class="md-subhead">Extra Large</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content layout="row" layout-align="space-between">
-          <div class="md-media-xl card-media"></div>
-          <md-card-actions layout="column">
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Settings">
-              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Share">
-              <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-            </md-button>
-          </md-card-actions>
-        </md-card-content>
-      </md-card>
-     </div>
-     </md-content>
 
      <!-- About Us -->
-     <md-content flex ng-show ="store.showAboutUs" ng-hide="hideSearchResult;!store.showAboutUs">
+     <md-content flex ng-show ="store.showAboutUs" ng-hide="!store.showAboutUs">
      <div layout ="column" layout-xs="column" layout-sm="column">Welcome to the world of M/s National Scientific Apparatus Works, one of the leading Manufacturers of today.
        Our company Manufacture and Supply an exclusive range of high optimum quality products, which are available nowhere else. Your premium range of products encompasses of Biochemistry Equipment, Biology Equipment, Civil Engineering Surveying Equipment, Educational Meters, Electronic Products, Laboratory Glassware, etc. Our company is bestowed with a highly experienced team of professionals, which make 100% precise and accurate products.
        We also have state-of-the art technology equipped in our infrastructure, which also takes of our quality standards.

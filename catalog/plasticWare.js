@@ -6,8 +6,10 @@ var plasticWare = [
   {img:"image/narrowmouthbottel.jpg", name:"NARROW MOUTH BOTTLE", price:"25", description:"This autoclavable bottle, made of polypropylene, can be used for storing & transferring chemicals and other reagents safe & sound.", specs:"4000 ml", material:"Polypropylene"},
   {img:"image/wideMouthSquareBottle.png", name:"WIDE MOUTH SQUARE BOTTLE", price:"45", description:" This autoclavable bottle, made of polypropylene, can be used for storing & shipping chemicals & reagents. Being wide mouthed, it is always convenient to pour in & take out the reagents. The built in depressions on two sides provide excellent grip while holding this bottle.", specs:"4000 ml", material:"Polypropylene"},
   { img:"image/HEAVYDUTYVACCUBOTTLE.png", name:"HEAVY DUTY VACCUM BOTTLE", price:"77", description:"This autoclavable bottle, made of polypropylene, has thick walls, is rugged & can be used for repeated applications of vacuum.",specs:"2000 ml",material:"Polypropylene"},
-   { img:"image/carboy.jpg", name:"CARBOY", price:"on request", description:"Carboys, made of polypropylene, are much lighter than glass. These autoclavable, dependable & durable carboys are provided with wide handles making it convenient while carrying or pouring purposes.",specs:"10Ltrs.	20 Ltrs.",material:":Polypropylene" },
-  /*{ img:"", name:"", price:"", description:"",specs:"",material:"" },
+   { img:"image/carboy.jpg", name:"CARBOY", price:"on request", description:"Carboys, made of polypropylene, are much lighter than glass. These autoclavable, dependable & durable carboys are provided with wide handles making it convenient while carrying or pouring purposes.",specs:"10Ltrs.	20 Ltrs.",material:"Polypropylene" },
+  {img:"image/CARBOYWITHSTOPCOCK.png", name: "CARBOY WITH STOP COCK", price:"0n request", description:" These polypropylene Carboys are autoclavable, dependable & durable. These are also equipped with a leak proof spigot screwed to the body. These carboys are an excellent replacement for glass carboys and are used for storing & dispensing distilled water & other laboratory solutions.",specs:"10 Ltrs.20 Ltrs.",material:"Polypropylene"},
+
+ /* { img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
    {img:"", name:"", price:"", description:"",specs:"",material:"" },

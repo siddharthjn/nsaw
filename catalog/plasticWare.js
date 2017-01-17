@@ -22,10 +22,10 @@ var plasticWare = [
  {img:"image/testtubestand.jpg", name:"Test Tube Stand", price:"On Request ", description:"This autoclavable stand is perhaps the most commonly used test tube stand in various laboratories. For better visibility, this 6 place rack is endsupported by 2 columns. The top plate has 2 holes for holding 25 mmdia test tubes, four holes to hold 16 mm dia tubes where as the basehas corresponding hemispherical wells. It also has six vertical pinsfor drying tubes. Another option available in this section is a testtube stand in which all the holes in the top plates can hold 25 mm diatubes.",specs:"",material:"Polypropylene" },
   {img:"image/testtubestand(round).jpg", name:"Test Tube Stand (Round)", price:"On Request", description:"A handy, little,space saver, this circular twelve place polypropylene test tube standhas four 25 mm dia holes & eight 19 mm dia holes in its top plate. Thebase has matching hemispherical wells & 16 vetical pins for dryingtubes surrounded by a trough to catch drippings. This autoclavable rack can be easily disassembled for cleaning purpose.",specs:"",material:"Polypropylene"},
    {img:"image/testtubestand(3).jpg", name:"Test Tube Stand (3-tier)", price:"On Request", description:" These ingenious racks with a 3-tier design provide clear view of the tube contents &convenient insertion & removal of tubes. The PC Rack has transparent upper & middle plates where as in PP racks, every part is colored &opaque. These autoclavable racks can with stand sub-freezing temperatures.",specs:"13 mm x 31 Tubes 16 mm x 31 Tubes 20 mm x 20 Tubes 25 mm x 12 Tubes 25 mm x 18 Tubes 32 mm x 12 Tubes 25 mm x 36 Tubes 13 mm x 18 Tubes 15 mm x 18 Tubes 18 mm x 12 Tubes 13 mm x 62 Tubes 16 mm x 62 Tubes mm x 40 Tubes 13 mm x 48 Tubes 13 mm x 72 Tubes",material:"Polypropylene" },
-/* {img:"", name:"", price:"", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"", description:"",specs:"",material:"" },
-
+ {img:"image/animalcage.jpg", name:"Animal Cage", price:"On Request", description:" These Cages provide excellent shelter for different animal species in the laboratory. The metallic top provides proper ventilation and has provisions for feeding the species.Available in two different sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm.",specs:"290 X 220 X 140 mm and 430 X 270 X 150 mm",material:"Polypropylene/Stainless Steel" },
+   {img:"image/animalcagetwingrill.jpg", name:"Animal Cage(Twin Grill) ", price:"On Request", description:"Adding in line with the existing range, these animal cages are provided with a stainless steel grill at the bottom of the cage to provide a clean surface for the species to move on..Available in two different sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm",specs:" sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm",material:"Polypropylene/Stainless Steel" },
+   {img:"image/waterbottleanimalcage.jpg", name:"Water Bottle-Animal Cage", price:"On Request", description:" These water bottles prove to be an excellent accessory for the species kept in the cages. Available in two sizes 125 ml. and 250 ml. ",specs:" sizes 125 ml. and 250 ml",material:"Polypropylene/Stainless Steel" },
+ { img:"image/instrumenttray.jpg", name:"Instrument Tray", price:"On Request", description:" This autoclavable trays have cover which fits into groove of trays to minimize spillage of meterial. Smaller size can be used to sterilize small instruments whereas the larger size allows pipettes to be fully immersed in disinfectant prior to sterilisizing.sizes available 220 x 150 x 70 mm and 450 x 150 x 70 mm.",specs:" 220 x 150 x 70 mm and 450 x 150 x 70 mm.",material:"Polypropylene" },
 
 
 
@@ -35,7 +35,10 @@ var plasticWare = [
 
  
 
- { img:"", name:"", price:"", description:"",specs:"",material:"" },
+
+  
+  
+ },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
    {img:"", name:"", price:"", description:"",specs:"",material:"" },

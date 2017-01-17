@@ -38,8 +38,8 @@ var plasticWare = [
 
   
   
- },
-  {img:"", name:"", price:"", description:"",specs:"",material:"" },
+
+ /* {img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
    {img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },

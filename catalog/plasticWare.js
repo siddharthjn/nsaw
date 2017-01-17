@@ -25,12 +25,16 @@ var plasticWare = [
  {img:"image/animalcage.jpg", name:"Animal Cage", price:"On Request", description:" These Cages provide excellent shelter for different animal species in the laboratory. The metallic top provides proper ventilation and has provisions for feeding the species.Available in two different sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm.",specs:"290 X 220 X 140 mm and 430 X 270 X 150 mm",material:"Polypropylene/Stainless Steel" },
    {img:"image/animalcagetwingrill.jpg", name:"Animal Cage(Twin Grill) ", price:"On Request", description:"Adding in line with the existing range, these animal cages are provided with a stainless steel grill at the bottom of the cage to provide a clean surface for the species to move on..Available in two different sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm",specs:" sizes.290 X 220 X 140 mm and 430 X 270 X 150 mm",material:"Polypropylene/Stainless Steel" },
    {img:"image/waterbottleanimalcage.jpg", name:"Water Bottle-Animal Cage", price:"On Request", description:" These water bottles prove to be an excellent accessory for the species kept in the cages. Available in two sizes 125 ml. and 250 ml. ",specs:" sizes 125 ml. and 250 ml",material:"Polypropylene/Stainless Steel" },
- { img:"image/instrumenttray.jpg", name:"Instrument Tray", price:"On Request", description:" This autoclavable trays have cover which fits into groove of trays to minimize spillage of meterial. Smaller size can be used to sterilize small instruments whereas the larger size allows pipettes to be fully immersed in disinfectant prior to sterilisizing.sizes available 220 x 150 x 70 mm and 450 x 150 x 70 mm.",specs:" 220 x 150 x 70 mm and 450 x 150 x 70 mm.",material:"Polypropylene" },
-
-
-
-
-
+ {img:"image/instrumenttray.png", name:"Instrument Tray", price:"On Request", description:" This autoclavable trays have cover which fits into groove of trays to minimize spillage of meterial. Smaller size can be used to sterilize small instruments whereas the larger size allows pipettes to be fully immersed in disinfectant prior to sterilisizing.sizes available 220 x 150 x 70 mm and 450 x 150 x 70 mm.",specs:" 220 x 150 x 70 mm and 450 x 150 x 70 mm.",material:"Polypropylene" },
+{img:"image/carriertray.png ", name:"Carrier Tray ", price:"On Request", description:" This autoclavable polypropylene Tray has a unique feature i.e its handle which proves really helpful in carrying reagents or laboratory apparatus from one place to another,single handedly . size :380 x 240 x 115 mm",specs:" size :380 x 240 x 115 mm",material:"polypropylene" },
+{img:"image/ utilitytray.png", name:" Utility Tray", price:"On Request", description:" The Utility Tray and as the name suggests this polypropylene Trays can be utilized for purposes ranging from drying glassware to sterilizing and to store any laboratory apparatus. size available 375 x 350 x 130 mm",specs:"375 x 350 x 130 mm",material:" polypropylene" },
+   {img:"image/laboratorytray.png", name:"Laboratory Tray", price:"On Request", description:"  Laboratory Tray moulded in polypropylene is a multipurpose tray that can be used for sterilizing, drying glassware, porcelainware & other laboratory instruments.These steam  autoclavable trays have tapered walls which prove good for nesting.sizes available 450 x 350 x 75 mm and 375 x 300 x 75 mm",specs:" 450 x 350 x 75 mm and 375 x 300 x 75 mm",material:"polypropylen"}, 
+ {img:"image/drainingbasket.png", name:"Draining Basket", price:"On Request ", description:" As the name suggests,this basket with wide net like structure on all sides prove really useful for draining different laboratory appratus after washing them.made of polypropylene,this basket can be reapeatedly autoclaved. size :400 x 400 x 100 mm ",specs:" size :400 x 400 x 100 mm",material:" polypropylene" },
+{img:"image/testtubebaskets.png", name:"Test Tube Baskets", price:"On Request", description:" Test Tube Baskets are made of Polypropylene.These autoclavable,unbreakable and non-corrosive Baskets are ideal for rinsing & draining glassware.These are also useful for storage of test tubes or culture tubes during sterilization or incubation. sizes available 140 x 120 x 110 mm and 160 x 160 x 160 mm",specs:" sizes 140 x 120 x 110 mm and 160 x 160 x 160 mm",material:" Polypropylene." },
+{img:"image/seperatoryfunnelholder.jpg", name:"Seperatory Funnel Holder", price:"On Request", description:" This non-corrosive seperatory funnel holder, moulded in polypropylene, has a front opening which provides clear view of the solution and allows unobstructed placement of separatory funnels. Two tapered wedges are provided to ensure firm grip on rods having dia 1/2 inch or 3/8". ,specs:"",material:"polypropylene" }, 
+/* {img:"", name:"", price:"", description:"",specs:"",material:"" },
+  {img:"", name:"", price:"", description:"",specs:"",material:"" },
+   {img:"", name:"", price:"", description:"",specs:"",material:"" },
 
 
  
@@ -39,7 +43,7 @@ var plasticWare = [
   
   
 
- /* {img:"", name:"", price:"", description:"",specs:"",material:"" },
+ {img:"", name:"Draining Basket", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },
    {img:"", name:"", price:"", description:"",specs:"",material:"" },
   {img:"", name:"", price:"", description:"",specs:"",material:"" },

@@ -34,21 +34,20 @@ var plasticWare = [
 {img:"image/seperatoryfunnelholder.jpg", name:"Seperatory Funnel Holder", price:"On Request", description:" This non-corrosive seperatory funnel holder, moulded in polypropylene, has a front opening which provides clear view of the solution and allows unobstructed placement of separatory funnels. Two tapered wedges are provided to ensure firm grip on rods having dia 1/2 inch or 3/8." ,specs:"",material:"polypropylene" } ,
    {img:"image/buchnerfunnel.jpg ", name:"Buchner Funnel ", price:"On Request", description:" Moulded in Polypropylene, these two piece funnels are light weight, easy to clean & autoclavable. The top portion can be snap fitted with the lower one forming a vaccum seal which does not require greasing. The base of the top portion has perforated filter plate.sizes :70 mm,110 mm,90mm.",specs:"sizes :70 mm,110 mm,90mm.",material:" Polypropylene," },
   {img:"image/analyticalfunnel.jpg ", name:"Analytical Funnel ", price:"On Request", description:" Designed specifically for analytical chemistry, the body of the funnels is 60°. Moulded in PP, these funnels are provided with internal & external ribs to prevent air blockage.Particulars:35 mm,50 mm, 62 mm,75 mm,100mm.Inside φ 35,50,62,75,100.Stem Length :37,50,67,77,95.",specs:"35 mm,50 mm, 62 mm,75 mm,100 mm.Inside φ 35,50,62,75,100.Stem Length :37,50,67,77,95.",material:"PP" },
-  /* {img:"", name:"", price:"", description:"",specs:"",material:"" },
+  {img:"image/powderfunnels.jpg", name:"Powder Funnels", price:"On Request", description:" These polypropylene funnels are best suited for transferring powdered reagents. The unique feature of these funnels is its parallel stem that minimizes bridging of powder. These funnels are steam autoclavable at 121°C.",specs:"",material:"" },
+  {img:"image/industrialfunnels.jpg",name:"Industrial Funnels",price:"On Request", description:" Industrial funnels are designed in such a way that they make filling of carboys, drums and barrels very convenient. The handles of these funnels make their handling very easy. ",specs:"",material:"" },
+ {img:"image/cryovialinternalthread.jpg",name:"Cryo Vial-Internal Thread ",price:"On Request", description:" cryo vials is this vial which has internal thread in it. The cap fitted with an O-ring screws in to the vial and makes it a leakproof Cryo Vial. These vials are provided with white, prominent graduations and a long marking area for sample identification. ",specs:"",material:"" },
+ {img:"",name:"",price:"", description:" ",specs:"",material:"" },
+ {img:"",name:"",price:"", description:" ",specs:"",material:"" },
+ {img:"",name:"",price:"", description:" ",specs:"",material:"" },
 
-
+  {img:"",name:"",price:"", description:" ",specs:"",material:"" },
  
 
+ {img:"",name:"",price:"", description:" ",specs:"",material:"" },
+
 
   
   
-
- {img:"", name:"", price:"", description:"",specs:"",material:"" },
-  {img:"", name:"", price:"", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"", description:"",specs:"",material:"" },
-  {img:"", name:"", price:"", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"45", description:"",specs:"",material:"" },
-   {img:"", name:"", price:"", description:"",specs:"",material:"" }*/
-  
+ 
   ];

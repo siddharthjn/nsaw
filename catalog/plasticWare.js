@@ -37,14 +37,14 @@ var plasticWare = [
   {img:"image/powderfunnels.jpg", name:"Powder Funnels", price:"On Request", description:" These polypropylene funnels are best suited for transferring powdered reagents. The unique feature of these funnels is its parallel stem that minimizes bridging of powder. These funnels are steam autoclavable at 121°C.",specs:"",material:"" },
   {img:"image/industrialfunnels.jpg",name:"Industrial Funnels",price:"On Request", description:" Industrial funnels are designed in such a way that they make filling of carboys, drums and barrels very convenient. The handles of these funnels make their handling very easy. ",specs:"",material:"" },
  {img:"image/cryovialinternalthread.jpg",name:"Cryo Vial-Internal Thread ",price:"On Request", description:" cryo vials is this vial which has internal thread in it. The cap fitted with an O-ring screws in to the vial and makes it a leakproof Cryo Vial. These vials are provided with white, prominent graduations and a long marking area for sample identification. ",specs:"",material:"" },
- {img:"",name:"",price:"", description:" ",specs:"",material:"" },
+/* {img:"",name:"",price:"", description:" ",specs:"",material:"" },
  {img:"",name:"",price:"", description:" ",specs:"",material:"" },
  {img:"",name:"",price:"", description:" ",specs:"",material:"" },
 
   {img:"",name:"",price:"", description:" ",specs:"",material:"" },
  
 
- {img:"",name:"",price:"", description:" ",specs:"",material:"" },
+ {img:"",name:"",price:"", description:" ",specs:"",material:"" },*/
 
 
   

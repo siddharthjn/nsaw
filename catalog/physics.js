@@ -21,9 +21,20 @@ var physics =[
    {img:"image/rod.jpg",name :"EBONITE ROD ",price:"On Request",description:"Polished, 300 x 13 mm length x diam."},
    {img:"image/whirl.jpg",name :" ELECTRIC WHIRL",price:"On Request",description:"On stand, with insulated base"},
    {img:"image/expansion.jpg",name :" EXPANSION APPARATUS",price:"On Request",description:"Two cast metal uprights, height 18 cm, fitted with two nickel plated rods supporting expansion bar of length 38 cm. Expansion bar is fixed to one upright and moves a pointer on the other, when heated.With scale reading0 to 90°, supplied with one each aluminium, brass and iron expansion bars."},
+   {img:"image/diesel.jpg",name :"FOUR STROKE DIESEL ENGINE MODEL",price:"On Request",description:"Four stroke water cooled diesel engine, shows functioning of fuel injection system together with hot coil starting device."},
+   {img:"image/cube.jpg",name :" METAL CUBE ",price:"On Request",description:"Packed in a cardboard box.Available Sizes :10mm, 20mm, 25mm & 32mm"},
+   {img:"image/meldes.jpg",name :"MELDE'S APPARATUS ",price:"On Request",description:"Designed to show the effects of vibrations in a stretched cord and investigate the relationship between frequency, tension and density.Comprises a thin steel rod armature, mounted in a clamp formed by a pair of 4mm socket terminals, so that its free length may be adjusted as desired.The free end of the armature equipped with a small boss and clamping screw for attachment of the cord and also serves as the moving contact when the apparatus is operating as a changeover switch.The complete apparatus is carried upon a box type base 150 x 80mm."},
+   {img:"image/leverkit.jpg",name :" LEVER KIT ",price:"On Request",description:"To illustrate principles of lever and moment.Five plywood beams 600x44x3mm with ruled graduations at every 38mm and a shallow groove across its centre for fulcrum point, with 4 wood fulcrums and forty 25mm square metal blanks."},
+   {img:"image/oested.jpg",name :" OESTED'S APPARATUS ",price:"On Request",description:"To show the action of electric current on a magnet.Cobalt steel needle 75 mm, long with agate bearing supported by pivot mounted on plastic base and surrounded by a rectangular of copper rod 85 x 45mm, fitted with terminals."},
+   {img:"image/photocell.jpg",name :" PHOTO ELECTRIC CELL UNIT",price:"On Request",description:"Mounted on base, with 4 mm, colour coded sockets, with circuit diagram printed for demonstration."},
+   {img:"image/polythene.jpg",name :" POLYTHENE ROD ",price:"On Request",description:"For use as insulators. Length approximate 30 cm. and 13 mm. dia."},
+   {img:"image/thermo.jpg",name :" THERMO COUPLE COPPER CONTANTAN ",price:"On Request",description:"One each wires copper and constantan approximately 305 mm long, twisted and brazed together."},
    {img:"image/.jpg",name :"",price:"On Request",description:""},
    {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
+  
+  
+  
+  
   {img:"image/mcttwinrack.jpg", name:"MCT Twin Rack", price :25 , description:"The transparent top provides an excellent view as well as a protection cover for the tubes stored. Each face of the base has a unique alpha-numeric index for easy identification of the tube.", specs:"0.5 ml & 1.5 ml", material:"Plastic"},
   { img:"image/grey.jpeg", name : "Screw Gauge", price: 20,description: "Screw Gauge is a tool to measure height"},
   { img:"image/grey.jpeg", name : "Optical Lense", price: 35,description: "A concave lense to focus"},

@@ -49,10 +49,10 @@ var physics =[
   {img:"image/lens glass.jpg",name :" LENS, DEMONSTRATION SET, GLASS",price:"On Request",description:"Made from Plate Glass, with carefully ground and polished optical surfaces, and cleanly ground edges.Available Sizes are : 100mm / 100mm, 38mm / 300mm, 38mm / 50mm FL 38mm / 100mm, 38mm / 150mm, 38mm / 200mm, 38mm / 500mm 50mm / 50mm, 50mm / 100mm, 50mm / 150mm, 50mm / 200mm 50mm / 250mm, 50mm / 300mm, 50mm / 375mm, 50mm / 500mm 75mm / 100mm & 75mm / 200mm"},
   {img:"image/convex.jpg",name :" LENSES, SPHERICAL, GLASS / DOUBLE CONVEX LENSES",price:"On Request",description:"Made from Plate Glass, with carefully ground and polished optical surfaces, and cleanly ground edges.Available Sizes are : 100mm / 100mm, 100mm / 200mm, 100mm / 500mm 125mm / 350mm, 38mm / 50mm FL, 38mm / 100mm, 38mm / 150mm 38mm / 200mm, 38mm / 250mm , 38mm / 300mm, 38mm / 375mm"},
   {img:"image/opticsset.jpg",name :" OPTICS SET",price:"On Request",description:"Includes and double concave, and three mirrors, one each of convex, concave and plane.Packed in a cushioned wood storage box.Two acrylic lenses, one each of double convex."},
-  {img:"image/.jpg",name :"",price:"On Request",description:""},
-  {img:"image/.jpg",name :"",price:"On Request",description:""},
-  {img:"image/.jpg",name :"",price:"On Request",description:""},
-  {img:"image/.jpg",name :"",price:"On Request",description:""},
+  {img:"image/barmagnetalinco.jpg",name :"BAR MAGNETS , ALNICO",price:"On Request",description:"Powerful, painted magnets excellent for student use to demonstrate magnetic properties and magnetic fields. North-south poles are marked.  supplied in pair."},
+  {img:"image/hemispheres.jpg",name :"Magdeburg Hemispheres",price:"On Request",description:"One hemisphere has a gasket seal; the other has a stopcock for attaching to 0.8-1.2cm inner-diameter vacuum tubing. Join the hemispheres, hook them up to a hand pump, aspirator, or vacuum pump, and evacuate them. Students will find it hard, if not impossible, to pull them apart. Open the stopcock to let air in, and the hemispheres separate easily"},
+  {img:"image/metalbar.jpg",name :"METAL CYLINDER SET",price:"On Request",description:"Four different metal cylinders. made of aluminium, zinc, copper and steel.available size:30mm x 10 mm"},
+  {img:"image/geometrical.jpg",name :" Geometrical Figures",price:"On Request",description:" Geometrical Figures. wooden,set of 12 Objects, 2"x4" size in box.includes major shapes used in physics and mathematics . Wooden Figures as per : (a) Cube (b) Cone (c) Sphere (d) cylinder (e) semisphere (f)Rectangular (g) Square Prism (h) Square Pyramid (i) Triangular Prism (j) Triangular Pyramid (k) Pentagonal Prism (l) Pentagonal Pyramid. It is also Help children recognise 12 common shapes "},
   {img:"image/.jpg",name :"",price:"On Request",description:""},
 
   

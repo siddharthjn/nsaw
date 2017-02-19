@@ -53,8 +53,15 @@ var physics =[
   {img:"image/hemispheres.jpg",name :"Magdeburg Hemispheres",price:"On Request",description:"One hemisphere has a gasket seal; the other has a stopcock for attaching to 0.8-1.2cm inner-diameter vacuum tubing. Join the hemispheres, hook them up to a hand pump, aspirator, or vacuum pump, and evacuate them. Students will find it hard, if not impossible, to pull them apart. Open the stopcock to let air in, and the hemispheres separate easily"},
   {img:"image/metalbar.jpg",name :"METAL CYLINDER SET",price:"On Request",description:"Four different metal cylinders. made of aluminium, zinc, copper and steel.available size:30mm x 10 mm"},
   {img:"image/geometrical.jpg",name :" Geometrical Figures",price:"On Request",description:" Geometrical Figures. wooden,set of 12 Objects, 2"x4" size in box.includes major shapes used in physics and mathematics . Wooden Figures as per : (a) Cube (b) Cone (c) Sphere (d) cylinder (e) semisphere (f)Rectangular (g) Square Prism (h) Square Pyramid (i) Triangular Prism (j) Triangular Pyramid (k) Pentagonal Prism (l) Pentagonal Pyramid. It is also Help children recognise 12 common shapes "},
-  {img:"image/.jpg",name :"",price:"On Request",description:""},
-
+  {img:"image/alnicomagnets.jpg",name :"ALNICO U-SHAPED MAGNETS",price:"On Request",description:"Painted Red and supplied with a keeper Size :1,2,3 long, each"},
+ {img:"image/horseshoemagnet.jpg",name :"HORSE SHOE MAGNET CHROME STEEL",price:"On Request",description:"Magnet, Horse Shoe, Chrome Steel with keepers"},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   {img:"image/.jpg",name :"",price:"On Request",description:""},
   
   
   

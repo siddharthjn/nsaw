@@ -54,22 +54,12 @@ var physics =[
   {img:"image/metalbar.jpg",name :"METAL CYLINDER SET",price:"On Request",description:"Four different metal cylinders. made of aluminium, zinc, copper and steel.available size:30mm x 10 mm"},
   {img:"image/geometrical.jpg",name :" Geometrical Figures",price:"On Request",description:" Geometrical Figures. wooden,set of 12 Objects, 2"x4" size in box.includes major shapes used in physics and mathematics . Wooden Figures as per : (a) Cube (b) Cone (c) Sphere (d) cylinder (e) semisphere (f)Rectangular (g) Square Prism (h) Square Pyramid (i) Triangular Prism (j) Triangular Pyramid (k) Pentagonal Prism (l) Pentagonal Pyramid. It is also Help children recognise 12 common shapes "},
   {img:"image/alnicomagnets.jpg",name :"ALNICO U-SHAPED MAGNETS",price:"On Request",description:"Painted Red and supplied with a keeper Size :1,2,3 long, each"},
- {img:"image/horseshoemagnet.jpg",name :"HORSE SHOE MAGNET CHROME STEEL",price:"On Request",description:"Magnet, Horse Shoe, Chrome Steel with keepers"},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
-  
-  
-  
+ {img:"image/horseshoemagnet.jpg",name :"HORSE SHOE MAGNET CHROME STEEL",price:"On Request",description:"Magnet, Horse Shoe, Chrome Steel with keepers"},  
   {img:"image/mcttwinrack.jpg", name:"MCT Twin Rack", price :25 , description:"The transparent top provides an excellent view as well as a protection cover for the tubes stored. Each face of the base has a unique alpha-numeric index for easy identification of the tube.", specs:"0.5 ml & 1.5 ml", material:"Plastic"},
   { img:"image/grey.jpeg", name : "Screw Gauge", price: 20,description: "Screw Gauge is a tool to measure height"},
-  { img:"image/grey.jpeg", name : "Optical Lense", price: 35,description: "A concave lense to focus"},
+  { img:"image/grey.jpeg", name : "Optical Lense", price: 35,description: "A concave lense to focus"}
   
-   {img:"image/.jpg",name :"",price:"On Request",description:""},
+   
   
   
   

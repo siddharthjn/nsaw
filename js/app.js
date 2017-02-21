@@ -94,6 +94,10 @@
         button = careers;
         changeColorButton(button);
       }
+      else if(this.tab == 8){
+        this.showAboutUs = false;
+        this.products = pharmacy;
+      }
     };
 
   });

@@ -13,6 +13,18 @@
 
   /*to grab the product category based on the product selected from sidenav*/
   app.controller('StoreController', function($scope, $mdMedia, $mdSidenav){
+
+    function changeButtonToWhite(){
+      $scope.physCol = {"background-color" : "white"};
+      $scope.chemCol = {"background-color" : "white"};
+      $scope.bioCol = {"background-color" : "white"};
+      $scope.plasCol = {"background-color" : "white"};
+      $scope.abtUs = {"background-color" : "white"};
+      $scope.contUs = {"background-color" : "white"};
+      $scope.careers = {"background-color" : "white"};
+      $scope.pharCol = {"background-color" : "white"};
+    }
+
     this.tab =1;
     this.showAboutUs = false;
     this.setTab = function(newValue)
@@ -22,81 +34,58 @@
         $mdSidenav('left').close();
       }
       this.tab = newValue;
-      var physCol, chemCol, bioCol, plasCol, abtUs, contUs, careers;
-      /*$scope.physCol = {"background-color" : "white"};
-      $scope.chemCol = {"background-color" : "white"};
-      $scope.bioCol = {"background-color" : "white"};
-      $scope.plasCol = {"background-color" : "white"};
-      $scope.abtUs = {"background-color" : "white"};
-      $scope.contUs = {"background-color" : "white"};
-      $scope.careers = {"background-color" : "white"};*/
-
-      var button;
-
-      function changeColorButton(button){
-        $scope.button = {"background-color" : "rgb(95, 218, 204)"};
-      }
-
-      function changeButtonToWhite(button){
-        $scope.button = {"background-color" : "white"};
-      }
 
       if(this.tab == 1)
       {
         this.showAboutUs = false;
         this.products = physics;
-        changeButtonToWhite(button);
-        button = physCol;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.physCol = {"background-color" : "pink"};
       }
       else if(this.tab == 2)
       {
         this.showAboutUs = false;
         this.products = chemistry;
-        changeButtonToWhite(button);
-        button = chemCol;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.chemCol = {"background-color" : "pink"};
       }
       else if(this.tab == 3)
       {
         this.showAboutUs = false;
         this.products = bio;
-        changeButtonToWhite(button);
-        button = bioCol;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.bioCol = {"background-color" : "pink"};
       }
       else if(this.tab == 4)
       {
         this.showAboutUs = false;
         this.products = plasticWare;
-        changeButtonToWhite(button);
-        button = plasCol;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.plasCol = {"background-color" : "pink"};
       }
       else if(this.tab == 5){
         this.showAboutUs = true;
         this.products = null;
-        changeButtonToWhite(button);
-        button = abtUs;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.abtUs = {"background-color" : "pink"};
       }
       else if(this.tab == 6){
         this.products = null;
         this.showAboutUs = false;
-        changeButtonToWhite(button);
-        button = contUs;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.contUs = {"background-color" : "pink"};
       }
       else if(this.tab == 7){
         this.showAboutUs = false;
         this.products = null;
-        changeButtonToWhite(button);
-        button = careers;
-        changeColorButton(button);
+        changeButtonToWhite();
+        $scope.careers = {"background-color" : "pink"};
       }
       else if(this.tab == 8){
         this.showAboutUs = false;
         this.products = pharmacy;
+        changeButtonToWhite();
+        $scope.pharCol = {"background-color" : "pink"};
       }
     };
 

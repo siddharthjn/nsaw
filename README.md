@@ -5,3 +5,5 @@
 National Scientific's objective is to promote science at every level of education.
 
 We are building a simple ecommerce website for National Scientific to help them reduce their sales and operations cost. 
+
+To visit the vebsite, please go to http://siddharthjn.github.io/nsaw/index.html

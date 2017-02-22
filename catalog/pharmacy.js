@@ -1,0 +1,4 @@
+var pharmacy = [
+  { img:"image/centrifugetuberoundbottom.jpg", name :"Centrifuge Tube Round Bottom", price: "On request", description: "Centrifuge tubes withround bottom are moulded in polypropylene & polycarbonate. These tubes have excellent clarity and are strong enough to be used upto 50,000xG. These tubes can be autoclaved, however, repeated autoclaving in PC tubes reduces their mechanical strength.", material: "Polypropylene & Polycarbonate", specs: "Available in all sizes."},
+  {img:"image/centrifugetubeconicalbottom.jpg", name:"Centrifuge Tube Conical Bottom", price: "On request", description:"Moulded in Polypropylene, these tubes are clear, strong & safe. These autoclavable tubes are provided with printed graduations on the outer surface. The built in seal ring in the cap makes these tubes absolutely leakproof.", material: "Polypropylene", specs: "Can withstand forces upto 7500xG & 12000xG for 15 ml & 50 ml tubes respectively."}
+];

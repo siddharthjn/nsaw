@@ -1,0 +1,153 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <script src="https://use.fontawesome.com/9263e0c41c.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+<body ng-app="nsawApp" ng-cloak layout="column">
+
+  <div layout="row" ng-controller ="openSideNav">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button md-whiteframe="5" class="hideOnLarge" ng-click="openLeftMenu()">
+          <i class="material-icons">view_list</i> </md-button>
+        <span id="brand">Nsaw</span>
+        <md-input-container flex class="positionToolbar">
+          <md-icon><i class="material-icons">search</i></md-icon>
+          <input style="background-color:white;" id="searchBar"
+          ng-model="search.name" type="text" placeholder="Search Products">
+        </md-input-container>
+      </div>
+    </md-toolbar>
+
+  </div>
+
+  <!-- Content -->
+      <div flex ng-controller ="StoreController as store" layout="row" layout-padding layout-margin layout-fill>
+         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
+         class="md-sidenav-left" md-disable-backdrop md-whiteframe="4">
+           <md-content>
+             <md-toolbar><span class="toolText">Categories</span></md-toolbar>
+             <ul>
+             <li><md-button ng-style ="physCol" ng-click="store.setTab(1)" flex>Physics</md-button></li>
+             <li><md-button ng-style ="chemCol" ng-click ="store.setTab(2)" flex >Chemistry</md-button></li>
+             <li><md-button ng-style ="bioCol" ng-click ="store.setTab(3)" flex>Biology</md-button></li>
+             <li><md-button ng-style ="plasCol" ng-click ="store.setTab(4)" flex>Plasticware</md-button></li>
+             <li><md-button ng-style ="pharCol" ng-click ="store.setTab(8)" flex>Pharmacy</md-button></li>
+             </ul>
+             <div class="divider"></div>
+             <ul>
+               <li><md-button ng-style ="abtUs" ng-click="store.setTab(5)" flex>About Us</md-button></li>
+               <li><md-button ng-style ="contUs" ng-click="store.setTab(6)" flex>Contact Us</md-button></li>
+               <li><md-button ng-style ="careers" ng-click="store.setTab(7)" flex>Careers</md-button></li>
+             </ul>
+           </md-content>
+       </md-sidenav>
+
+
+       <md-content ng-hide="store.showAboutUs" flex>
+       <div layout ="row" layout-xs="column" layout-sm="column">
+      <md-card flex="auto" ng-repeat ="product in store.products | filter:search.name" md-theme-watch
+      ng-class="{ 'selected-item': $index == selectedUserIndex}" ng-controller="cardController as cardCtrl">
+        <div layout="column">
+        <md-card-header flex="30">
+        <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out">
+      </md-card-header>
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">{{product.name}}</span>
+              <div layout="row">
+              <md-button ng-style ="infoCol"flex ="33" ng-click ="cardCtrl.setTabVal(1)">Info</md-button>
+              <md-button ng-style ="priceCol" flex="33" ng-click="cardCtrl.setTabVal(2)">Price</md-button>
+              <md-button ng-style ="specsCol" flex ="33"ng-click="cardCtrl.setTabVal(3)">Specs</md-button>
+            </div>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content layout="row" layout-align="space-between">
+            <div ng-show="cardCtrl.showDesc">{{product.description}}</div>
+            <div ng-show="cardCtrl.showPrice">{{product.price}}</div>
+            <div ng-show ="cardCtrl.showSpec">Material: {{product.material}} <br><br> Size: {{product.specs}}</div>
+            <!--<div ng-show="cardCtrl.tab=3">{{product.}}</div>-->
+          </md-card-content>
+          <!-- icons -->
+          <md-card-actions layout="row" layout-align="end center" ng-controller ="iconChanger as iconCtrl">
+          <md-button class="md-icon-button" ng-click ="iconCtrl.changeIcon(1);" aria-label="Favorite"
+          ng-hide="iconCtrl.heartChange">
+            <i class="material-icons">favorite_border</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Favorite" ng-click ="iconCtrl.changeIcon(2)"
+          ng-show ="iconCtrl.heartChange">
+            <i class="material-icons">favorite</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Settings" ng-click ="selectUserIndex($index)">
+            <i class="material-icons">view_headline</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="addTo shopping list"
+          ng-click ="iconCtrl.changeIcon(5)" ng-hide="iconCtrl.plusChange">
+            <i class="material-icons">add_circle_outline</i>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="added To shopping list"
+          ng-click ="iconCtrl.changeIcon(6)" ng-show ="iconCtrl.plusChange">
+            <i class="material-icons">add_circle</i>
+          </md-button>
+        </md-card-actions>
+        <!-- icons-->
+          </div>
+        </md-card>
+       </div>
+    </md-content>
+
+     <!-- About Us -->
+     <md-content flex ng-show ="store.showAboutUs" ng-hide="!store.showAboutUs">
+     <div layout ="column" layout-xs="column" layout-sm="column">Welcome to the world of M/s National Scientific Apparatus Works, one of the leading Manufacturers of today.
+       Our company Manufacture and Supply an exclusive range of high optimum quality products, which are available nowhere else. Your premium range of products encompasses of Biochemistry Equipment, Biology Equipment, Civil Engineering Surveying Equipment, Educational Meters, Electronic Products, Laboratory Glassware, etc. Our company is bestowed with a highly experienced team of professionals, which make 100% precise and accurate products.
+       We also have state-of-the art technology equipped in our infrastructure, which also takes of our quality standards.
+
+We introduce “NATIONAL SCIENTIFIC APPARATUS WORKS” established in 1964 as a company backed by more than four decades of manufacturing experience in the field of scientific/laboratory equipment and educational aids.
+Our company supplies products to some of the major states of India such as Gujarat, Madhya Pradesh, Maharashtra, Chennai etc.
+We are a total customer driven organization and we strive hard to fulfill all the demands of our customers. Our company is capable of providing customized products according to the specifications of our customers.
+We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays.
+Further, our company aims to increase its list of clientele and serve each one of them with utmost care.
+
+
+</div> </md-content>
+     <!-- About Us -->
+
+     <!-- Contact Us -->
+
+     <!-- Contact Us -->
+
+     <!-- Careers -->
+
+     <!-- Careers -->
+
+ </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <!--catalog-->
+  <script src="catalog/physics.js"></script>
+  <script src="catalog/chemistry.js"></script>
+  <script src="catalog/biology.js"></script>
+  <script src="catalog/plasticWare.js"></script>
+  <script src="catalog/pharmacy.js"></script>
+
+  <!--custom js-->
+  <script type="text/ng-template" id="template/head-toolbar.html"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,4 @@
-  /**
-   * You must include the dependency on 'ngMaterial'
-   */
-  app = angular.module('nsawApp', ['ngMaterial']);
+app = angular.module('nsawApp', ['ngMaterial']);
   console.log('app ready');
 
   /*for the menu button to open the nav bar*/
@@ -13,7 +10,6 @@
 
   /*to grab the product category based on the product selected from sidenav*/
   app.controller('StoreController', function($scope, $mdMedia, $mdSidenav){
-
     function changeButtonToWhite(){
       $scope.physCol = {"background-color" : "white"};
       $scope.chemCol = {"background-color" : "white"};
@@ -21,7 +17,6 @@
       $scope.plasCol = {"background-color" : "white"};
       $scope.abtUs = {"background-color" : "white"};
       $scope.contUs = {"background-color" : "white"};
-      $scope.careers = {"background-color" : "white"};
       $scope.pharCol = {"background-color" : "white"};
     }
 
@@ -74,12 +69,6 @@
         this.showAboutUs = false;
         changeButtonToWhite();
         $scope.contUs = {"background-color" : "pink"};
-      }
-      else if(this.tab == 7){
-        this.showAboutUs = false;
-        this.products = null;
-        changeButtonToWhite();
-        $scope.careers = {"background-color" : "pink"};
       }
       else if(this.tab == 8){
         this.showAboutUs = false;

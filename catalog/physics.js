@@ -84,7 +84,7 @@ var physics =[
  {img:"image/ ",name:" ",price:" On Request",description:" "},
  {img:"image/ ",name:" ",price:" On Request",description:" "},/*
 
-   {img:"image/ ",name:" ",price:" On Request",description:" "},
+   {img:"image/ ",name:" ",price:" On Request",description:" "},*/
 
 
 

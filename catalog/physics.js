@@ -66,6 +66,7 @@ var physics =[
   {img:"image/dipneedlebrass.jpg",name:"DIP NEEDLE (BRASS)",price:"On Request",description:" All parts Brass Metal on Fixed Magnetic Needle",specs:" "},
   {img:"image/inductor.jpg", name: " Earth Inductor",price:"On Request",description:" This is an improved form comprising a coil of different number of turns ( 500, 1000, 2000 or 5000 turns) of 36 SWG copper wire wound on an aluminum metal ring (150 mm dia.) A stop limiting rotation to 180º of the ring is provided with the help of the spring. The cradle supporting the coil of cast non-magnetic alloy 200 x 210 x 115 mm high may be placed either on its base or side so that the axis of rotation of the coil is either horizontal or vertical . Terminals for connections are mounted on the cradle supporting blocks.",specs:" "},
   {img:"image/airpump.JPG",name:"Air Pump(with Aluminium Plate)",price:"On Request",description:"This air pump is suitable for a number of classroom demonstrations,single barrel made from steel pipe fitted on wooden base.The aluminum plate is provided with a stop cock air inlet screw and a connection for rubber pressure tubing .",specs:" "}
+ 
   /*{img:"image/ ",name:" ",price:" On Request",description:" "},
  {img:"image/ ",name:" ",price:" On Request",description:" "},
  {img:"image/ ",name:" ",price:" On Request",description:" "},
@@ -82,7 +83,7 @@ var physics =[
  {img:"image/ ",name:" ",price:" On Request",description:" "},
  {img:"image/ ",name:" ",price:" On Request",description:" "},
  {img:"image/ ",name:" ",price:" On Request",description:" "},
- {img:"image/ ",name:" ",price:" On Request",description:" "},/*
+ {img:"image/ ",name:" ",price:" On Request",description:" "},
 
    {img:"image/ ",name:" ",price:" On Request",description:" "},*/
 

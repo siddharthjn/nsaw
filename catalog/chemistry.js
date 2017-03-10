@@ -5,19 +5,26 @@ var chemistry =[
   {img:"image/pipettepump.jpg", name:"PIPETTE PUMP", price: 250, description:"A fast release pipetting device for precise pipetting & zip quick emptying. The knurled thumbwheel can be rotated to draw up or dispense liquids while the releaser may be pushed in for zip-quick emptying. The moulded chuck has silicon rubber collet inside to hold various pipettes of standard sizes. It resists acids & alkalies and can be easily disassembled for thorough cleaning.", specs:"2ml, 10ml ,25ml", material:"Acrylonitrile Butadiene Styrene"},
   {img:"image/tripodstand.jpg ",name:"Tripod Stand ( triangular) ",price:" On Request",description:"Top triangular, length of one side 13cm and height 20cm. "},
  {img:"image/retortring.jpg ",name:"RETORT RING ",price:" On Request",description:"RETORT RING MADE OF MILD STEEL ROD, POWDER COATED WITH T SCREW ."},
-  {img:"image/ RETORTRINGIMPROVED.jpg",name:"RETORT RING IMPROVED ",price:"On Request ",description:" RETORT RING MADE OF MILD STEEL ROD WITH PRESSURE DAI CASTING BOSS HEAD WITH MILD STEEL SCREW,SIZES AVAILABLE:62mm,75mm,100mm"},
+  {img:"image/RETORTRINGIMPROVED.jpg",name:"RETORT RING IMPROVED ",price:"On Request ",description:" RETORT RING MADE OF MILD STEEL ROD WITH PRESSURE DAI CASTING BOSS HEAD WITH MILD STEEL SCREW,SIZES AVAILABLE:62mm,75mm,100mm"},
   {img:"image/gastap.jpg ",name:"GAS TAP ",price:"On Request ",description:" GAS TAP, MADE OF BRASS CHROME PLATED WITH STOP COCK AND ONE SPARE NOSEL.Types:one way,two way,three way,four way."},
   {img:"image/ 18mmwidehoffm.jpg",name:"HOFFMAN SCREW CLIPS ",price:"On Request ",description:"HOFF MAN SCREW MADE OF BRASS CHROME PLATED.sizes available:12mm,18mm,25mm,35mm. "},
   {img:"image/cork.jpg ",name:" CORK BORER ",price:"On Request ",description:"ORK BORER MADE OF THICK BRASS SHEET AND PIPE MADE OF BRASS COMPLETE CHROME PLATED.Size:set of 6,set of 12. "},
   {img:"image/filterpump.jpg ",name:"FILTER PUMP  ",price:"On Request ",description:"FILTER PUMP EDWARED TYPE, THIS MECHANISM CREATES VACUUM WHILE CONNECTING WITH WATER TAP (MADE OF EXTRUDED BRASS, CHROME PLATED) "},
   {img:"image/labjack.jpg ",name:"LABORATORY JACK ",price:"On Request ",description:"LABORATORY JACK, AN ALL PURPOSE CONSTRUCTED FROM STAINLESS STEEL, MILD STEEL. SUITABLE FOR HOT PLATES, BURNERS, BATHS, GLASSWARE & MANY MORE ITEMS.IT IS A KNOB OPERATED SCISSOR ACTION LIFTING MECHANISM FOR QUICK, EASY & ACCURATE HEIGHT ADJUSTMENT. MILD STEEL JACKS ARE FINISHED WITH POWDER COATED. size available: 12x14 cm,20x20 cm,25x25 cm."},
   {img:"image/rodfor stand.JPG ",name:" ROD FOR RETORT STAND",price:" On Request",description:"SPARE RODS FOR RETORT STAND, MADE OF MILD STEEL OR STAINLESS STEEL."},
-  {img:"image/forceps.jpg ",name:"FORCEPS ",price:" On Request",description:" MADE OF STAINLESS STEEL (BLUNT/ POINTED)"}
-  /*{img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/forceps.jpg ",name:"FORCEPS ",price:" On Request",description:" MADE OF STAINLESS STEEL (BLUNT/ POINTED)"},
+  {img:"image/bunsenburner.jpg ",name:" BUNSEN BURNER CAST IRON",price:"On Request ",description:" BUNSEN BURNER WITH STOP COCK, BASE MADE OF CAST IRON, PAINTED BASE APPX. DIA 70MM, TOTAL HEIGHT APPX. 160MM, BRASS PIPE CHROME PLATED 12MM DIA, STOP COCK ALL BRASS CHROME PLATED"},
+  {img:"image/ meakerburner.jpg",name:" MEAKER BURNER",price:"On Request ",description:" MEAKER BURNER WITH STOP COCK BASE MADE OF CAST IRON, PAINTED, BASE APPX. DIA 70mm, TOTAL HEIGHT APPX. 180mm, BRASS PIPE CHROME PLATED 24mm DIA, STOP COCK ALL BRASS CHROME PLATED"},
+  {img:"image/BUNSENBURNERSTEEL.jpg ",name:"BUNSEN BURNER MILD STEEL",price:"On Request ",description:" DISCRIPTION:BUNSEN BURNER WITH STOP COCK .BASE MADE OF MILD STEEL SHEET .COMPLETE COPDER COATED WITH STOP COCK AND BRASS CHROME PLATED PIPE"},
+  {img:"image/bunsenburnerdoubleflame.jpg ",name:"BUNSEN BURNER DOUBLE FLAME ",price:"On Request ",description:"BUNSEN BURNER DOUBLE FLAME WITH STOP COCK,BASE MADE OF CAST IRON, PAINTED,BASE APPX. DIA 70MM,TOTAL HEIGHT APPX. 170MM,BRASS PIPE CHROME PLATED 12MM DIA,STOP COCK ALL BRASS CHROME PLATED "},
+  {img:"image/ rubbertubing.jpg",name:" Rubber Tubing for Educational Laboratory",price:"On Request ",description:" Rubber Tubing:Superior Quality, shore hardness 45, temp. Range -30°C to 70°C, light flexible, for transferring gasses, liquids, It is resistance to dilute acids, alkalies, ammonia etc. For normal laboratory use.Supplied in Pack of 10m. Sizes (bore x wall thickness) available are 4 x 1.0mm, 5 x 1.5mm, 6 x 1.5mm, 7 x 1.5mm, 8 x 2.0mm, 10 x 2.0mm & 12 x 2.5mm."},
+  {img:"image/rubbertubing.jpg ",name:"Rubber Tube(Medium Pressure) ",price:"On Request ",description:"Red coloured, extra soft rubber tubing having more wall thickness making it capable of withstanding low to moderately high pressures. Resistant to acids, alkalis. Supplied in Pack of 10m. Sizes (bore x wall thickness) available are 3 x 3.0, 4.5 x 3.0, 6 x 3.0, 8 x 3.0, 9 x 3.0, 10 x 3.0 & 12.5 x 4.5. "},
+ {img:"image/rubberstopper.jpg ",name:"Rubber Stopper One Hole  ",price:"On Request ",description:"  Rubber Stopper One HoleOne Hole, superior quality rubber resistance to acid, alkali and ammonia."},
+  {img:"image/silicontubing.jpg ",name:"Silicone Tubing  ",price:"On Request ",description:"  Silicone Tubing: Highly elastic, non-toxic, heat resistance from -50°C to 250°C, repeatedly autoclavable, flexible odourless and transparency of the tubes allows visibility of the following fluid. Sizes (bore x wall thickness) available are 2 x 1.0, 2 x 2.0, 3 x 1.0, 4 x 1.5, 5 x 1.5, 6 x 1.5 & 7 x 2.0, 8 x 1.5, 8 x 2.0, 10 x 1.5, 10 x 2.0 & 14 x 3.0."},
+  {img:"image/ rubberstoppersolid.jpg",name:"Rubber Stopper Solid  ",price:"On Request ",description:"  Rubber Stopper Solid :Solid, superior quality rubber resistance to acid, alkali and ammonia. "},
   {img:"image/ ",name:" ",price:"On Request ",description:" "},
   {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  {img:"image/ ",name:" ",price:"On Request ",description:" "}*/
- 
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
   
 
 ];

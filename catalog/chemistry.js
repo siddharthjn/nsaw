@@ -21,10 +21,23 @@ var chemistry =[
   {img:"image/rubbertubing.jpg ",name:"Rubber Tube(Medium Pressure) ",price:"On Request ",description:"Red coloured, extra soft rubber tubing having more wall thickness making it capable of withstanding low to moderately high pressures. Resistant to acids, alkalis. Supplied in Pack of 10m. Sizes (bore x wall thickness) available are 3 x 3.0, 4.5 x 3.0, 6 x 3.0, 8 x 3.0, 9 x 3.0, 10 x 3.0 & 12.5 x 4.5. "},
  {img:"image/rubberstopper.jpg ",name:"Rubber Stopper One Hole  ",price:"On Request ",description:"  Rubber Stopper One HoleOne Hole, superior quality rubber resistance to acid, alkali and ammonia."},
   {img:"image/silicontubing.jpg ",name:"Silicone Tubing  ",price:"On Request ",description:"  Silicone Tubing: Highly elastic, non-toxic, heat resistance from -50°C to 250°C, repeatedly autoclavable, flexible odourless and transparency of the tubes allows visibility of the following fluid. Sizes (bore x wall thickness) available are 2 x 1.0, 2 x 2.0, 3 x 1.0, 4 x 1.5, 5 x 1.5, 6 x 1.5 & 7 x 2.0, 8 x 1.5, 8 x 2.0, 10 x 1.5, 10 x 2.0 & 14 x 3.0."},
-  {img:"image/ rubberstoppersolid.jpg",name:"Rubber Stopper Solid  ",price:"On Request ",description:"  Rubber Stopper Solid :Solid, superior quality rubber resistance to acid, alkali and ammonia. "},
+  {img:"image/rubberstoppersolid.jpg",name:"Rubber Stopper Solid  ",price:"On Request ",description:"  Rubber Stopper Solid :Solid, superior quality rubber resistance to acid, alkali and ammonia. "},
+  {img:"image/spiritlamp.jpg",name:"Spirit Lamp  ",price:"On Request ",description:": Spirit Lamp:Glass, with metal wick holder and glass cap, superior quality. "},
+  {img:"image/ charcoalblock.jpg",name:" Charcoal Blocks ",price:"On Request ",description:"Charcoal Blocks :Made from fine quality compressed charcoal. Size 25mm square section and 100mm long.  "},
+  {img:"image/ CORKPRESS.jpg",name:"Cork Press  ",price:"On Request ",description:" Cork Press :Cast iron, for softening corks evenly, by rolling without increasing the porosity. To accommodate corks up to 32mm dia., on wooden base. Cork press wheel type. "},
+ /* {img:"image/ ",name:" ",price:"On Request ",description:" "},
   {img:"image/ ",name:" ",price:"On Request ",description:" "},
   {img:"image/ ",name:" ",price:"On Request ",description:" "},
   {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},
+  {img:"image/ ",name:" ",price:"On Request ",description:" "},*/
 
 ];

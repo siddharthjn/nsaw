@@ -13,16 +13,16 @@
 </head>
 <body ng-app="nsawApp" ng-cloak layout="column">
 
-  <div layout="row" ng-controller ="openSideNav">
+  <div layout="row">
     <md-toolbar>
       <div class="md-toolbar-tools">
-        <md-button md-whiteframe="5" class="hideOnLarge" ng-click="openLeftMenu()">
+        <md-button md-whiteframe="5" class="hideOnLarge" ng-controller ="openSideNav" ng-click="openLeftMenu()">
           <i class="material-icons">view_list</i> </md-button>
         <span id="brand">Nsaw</span>
         <md-input-container flex class="positionToolbar">
           <md-icon><i class="material-icons">search</i></md-icon>
           <input style="background-color:white;" id="searchBar"
-          ng-model="search.name" type="text" placeholder="Search Products">
+          ng-model="searchResult" type="text" placeholder="Search Products">
         </md-input-container>
       </div>
     </md-toolbar>
@@ -53,7 +53,7 @@
 
        <md-content ng-hide="store.showAboutUs" flex>
        <div layout ="row" layout-xs="column" layout-sm="column">
-      <md-card flex="auto" ng-repeat ="product in store.products | filter:search.name" md-theme-watch
+      <md-card flex="auto" ng-repeat ="product in store.products | filter:searchResult" md-theme-watch
       ng-class="{ 'selected-item': $index == selectedUserIndex}" ng-controller="cardController as cardCtrl">
         <div layout="column">
         <md-card-header flex="30">

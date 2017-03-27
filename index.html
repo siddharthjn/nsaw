@@ -75,29 +75,7 @@
             <div ng-show ="cardCtrl.showSpec">Material: {{product.material}} <br><br> Size: {{product.specs}}</div>
             <!--<div ng-show="cardCtrl.tab=3">{{product.}}</div>-->
           </md-card-content>
-          <!-- icons -->
-          <md-card-actions layout="row" layout-align="end center" ng-controller ="iconChanger as iconCtrl">
-          <md-button class="md-icon-button" ng-click ="iconCtrl.changeIcon(1);" aria-label="Favorite"
-          ng-hide="iconCtrl.heartChange">
-            <i class="material-icons">favorite_border</i>
-          </md-button>
-          <md-button class="md-icon-button" aria-label="Favorite" ng-click ="iconCtrl.changeIcon(2)"
-          ng-show ="iconCtrl.heartChange">
-            <i class="material-icons">favorite</i>
-          </md-button>
-          <md-button class="md-icon-button" aria-label="Settings" ng-click ="selectUserIndex($index)">
-            <i class="material-icons">view_headline</i>
-          </md-button>
-          <md-button class="md-icon-button" aria-label="addTo shopping list"
-          ng-click ="iconCtrl.changeIcon(5)" ng-hide="iconCtrl.plusChange">
-            <i class="material-icons">add_circle_outline</i>
-          </md-button>
-          <md-button class="md-icon-button" aria-label="added To shopping list"
-          ng-click ="iconCtrl.changeIcon(6)" ng-show ="iconCtrl.plusChange">
-            <i class="material-icons">add_circle</i>
-          </md-button>
-        </md-card-actions>
-        <!-- icons-->
+
           </div>
         </md-card>
        </div>

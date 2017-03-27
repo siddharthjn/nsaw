@@ -68,26 +68,26 @@ var chemistry =[
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
-   {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
-  
-  
-  
-  
-  
+
+   {img:"image/ ",name:" ",price:"On Request ",description:" "}, */
+
+
+
+
+
+
 ];

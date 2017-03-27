@@ -149,35 +149,4 @@ app = angular.module('nsawApp', ['ngMaterial']);
 
   });
 
-  app.controller('iconChanger', function($scope, $mdToast){
-    this.icon = 0;
-    this.heartChange = false;
-    this.menuChange = false;
-    this.plusChange = false;
-    this.changeIcon = function(newIconVal)
-    {
-      this.icon = newIconVal;
-      if(this.icon ==1)
-      {
-        this.heartChange =true;
-          $mdToast.show($mdToast.simple().textContent('Item added to wishlist'));
-      }
-      if(this.icon ==2)
-      {
-        this.heartChange =false;
-          $mdToast.show($mdToast.simple().textContent('Item removed from wishlist'));
-      }
-      if(this.icon ==5)
-      {
-        this.plusChange =true;
-        $mdToast.show($mdToast.simple().textContent('Item added to shoppinglist'));
-      }
-      if(this.icon ==6)
-      {
-        this.plusChange =false;
-        $mdToast.show($mdToast.simple().textContent('Item removed from shoppinglist'));
-      }
-    };
-
-
-  });
+  

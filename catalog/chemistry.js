@@ -31,7 +31,6 @@ var chemistry =[
   {img:"image/APRON.jpg ",name:" APRON forLab",price:"On Request ",description:"LAB APRON:Heavy duty white. Resistant to most chemicals including strong acids and alkalis.. "},
   {img:"image/FACESHIELD.jpg",name:" Faceshield for Lab",price:"On Request ",description:" Faceshield - Plastic visor, transparent non flammable for protection against chemicals splashes and impact from flying objects.."},
   {img:"image/GLOVESRUBBER.jpg ",name:"RUBBER GLOVES for Lab ",price:"On Request ",description:" Rubber Gloves for Lab : Acid proof, available in White, Black or Red colour."},
-  {img:"image/metabolicshaker.jpeg ",name:" Water Bath Incubator Shaker (Metabolic Shaker)",price:"On Request ",description:"Desktop model designed for studies on tissue metabolism, Enzymes and protein coagulation or other experiments required shaking of subject matter at constant speed under controlled Temperature environment. It is a walled unit inside made of thick S.S. Sheet and outer of M.S. Sheet Duly powder coated. The paramedical lid of S.S. Prevents falling of Condensed water droplets on the Specimens. Heating is achieved through an immersion type heater and the temperature is controlled By DIGITAL TEMP. Indicator cum controller with an accuracy of ± 0.5° C, the bath has an oscillating. Tray riding on ball rollers oscillated through a geared variable speed motor shaking speed range is is between 40 to 140 cycles per minute. The shaking tray can either hold test tubes or Erlenmeyer flasks Of 25 ml or 50 ml or 100 ml or 250 ml or 500ml or 1000 ml. "},
   {img:"image/defagratingspoon.jpg",name:"Deflagrating Spoon ",price:"On Request ",description:"Deflagrating Spoon:Brass cup and iron rod held by cork in aluminium cap, length 35cm and dia. of cap 90mm, cup 18mm "},
   {img:"image/combustionspoon.jpg ",name:"Combustion Spoon ",price:"On Request ",description:" Combustion Spoon:Heavy gauge stainless steel wire, for use in test tubes 150x25mm. Shaft shaped to prevent contact with wall. Length 20cm and dia. of cup 18mm"},
   {img:"image/blowpipe.jpg",name:"Blow Pipe Burner",price:"On Request",description:" Blow Pipe Burner:Mouth, nickel-plated brass with nipple."},
@@ -68,26 +67,26 @@ var chemistry =[
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
+
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
-   {img:"image/ ",name:" ",price:"On Request ",description:" "},
-  
-  
-  
-  
-  
-  
+
+   {img:"image/ ",name:" ",price:"On Request ",description:" "}, */
+
+
+
+
+
+
 ];

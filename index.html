@@ -31,7 +31,7 @@
 
   <!-- Content -->
       <div flex ng-controller ="StoreController as store" layout="row" layout-padding layout-margin layout-fill>
-         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
+         <md-sidenav md-is-locked-open="$mdMedia('gt-xs')" md-component-id="left"
          class="md-sidenav-left" md-disable-backdrop md-whiteframe="4">
            <md-content>
              <md-toolbar><span class="toolText">Categories</span></md-toolbar>
@@ -57,7 +57,7 @@
       ng-class="{ 'selected-item': $index == selectedUserIndex}" ng-controller="cardController as cardCtrl">
         <div layout="column">
         <md-card-header flex="30">
-        <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out">
+        <img ng-src="{{product.img}}" class="md-card-image" alt="Washed Out" style ="max-width :350px;">
       </md-card-header>
           <md-card-title>
             <md-card-title-text>

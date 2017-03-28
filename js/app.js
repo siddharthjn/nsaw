@@ -16,12 +16,11 @@ app = angular.module('nsawApp', ['ngMaterial']);
       $scope.bioCol = {"background-color" : "white"};
       $scope.plasCol = {"background-color" : "white"};
       $scope.abtUs = {"background-color" : "white"};
-      $scope.contUs = {"background-color" : "white"};
       $scope.pharCol = {"background-color" : "white"};
     }
 
     this.tab =1;
-    this.showAboutUs = false;
+    this.showAboutUs = true;
     this.setTab = function(newValue)
     {
       if ($mdMedia('xs') || $mdMedia('sm'))
@@ -63,12 +62,6 @@ app = angular.module('nsawApp', ['ngMaterial']);
         this.products = null;
         changeButtonToWhite();
         $scope.abtUs = {"background-color" : "pink"};
-      }
-      else if(this.tab == 6){
-        this.products = null;
-        this.showAboutUs = false;
-        changeButtonToWhite();
-        $scope.contUs = {"background-color" : "pink"};
       }
       else if(this.tab == 8){
         this.showAboutUs = false;
@@ -147,6 +140,6 @@ app = angular.module('nsawApp', ['ngMaterial']);
       }
     };
 
-  });
+    $scope.currentNavItem = 'page1';
 
-  
+  });

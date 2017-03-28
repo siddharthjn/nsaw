@@ -45,7 +45,6 @@
              <div class="divider"></div>
              <ul>
                <li><md-button ng-style ="abtUs" ng-click="store.setTab(5)" flex>About Us</md-button></li>
-               <li><md-button ng-style ="contUs" ng-click="store.setTab(6)" flex>Contact Us</md-button></li>
              </ul>
            </md-content>
        </md-sidenav>
@@ -82,16 +81,45 @@
     </md-content>
 
      <!-- About Us -->
-     <md-content flex ng-show ="store.showAboutUs" ng-hide="!store.showAboutUs">
-     <div layout ="column" layout-xs="column" layout-sm="column">Welcome to the world of M/s National Scientific Apparatus Works, one of the leading Manufacturers of today.
-       Our company Manufacture and Supply an exclusive range of high optimum quality products, which are available nowhere else. Your premium range of products encompasses of Biochemistry Equipment, Biology Equipment, Civil Engineering Surveying Equipment, Educational Meters, Electronic Products, Laboratory Glassware, etc. Our company is bestowed with a highly experienced team of professionals, which make 100% precise and accurate products.
-       We also have state-of-the art technology equipped in our infrastructure, which also takes of our quality standards.
+     <md-content flex ng-show ="store.showAboutUs" ng-hide="!store.showAboutUs" >
+     <div layout ="column" layout-xs="column" layout-sm="column">
+       <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Who we are">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">National Scientific Apparatus Works</h1>
+          <p>We are a company backed by more than four decades of
+          manufacturing experience in the field of scientific/laboratory equipment and educational aids.</p>
+          <p>Our company supplies products to some of the major states of India such as Gujarat, Madhya Pradesh,
+            Maharashtra, Chennai
+           etc.</p>
+           <p>We are a total customer driven organization and we strive hard to fulfill all the demands of our customers.
+           Our company is capable of providing customized products according to the specifications of our customers.</p>
+           <p>We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays.
+           Further, our company aims to increase its list of clientele and serve each one of them with utmost care.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Team">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Meet the team</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Contact Us">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Let's get in touch!</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
 
-We introduce “NATIONAL SCIENTIFIC APPARATUS WORKS” established in 1964 as a company backed by more than four decades of manufacturing experience in the field of scientific/laboratory equipment and educational aids.
-Our company supplies products to some of the major states of India such as Gujarat, Madhya Pradesh, Maharashtra, Chennai etc.
-We are a total customer driven organization and we strive hard to fulfill all the demands of our customers. Our company is capable of providing customized products according to the specifications of our customers.
-We also supply our products at quite reasonable prices and that too within the stipulated time avoiding all delays.
-Further, our company aims to increase its list of clientele and serve each one of them with utmost care.
+
+
+
+
 
 
 </div> </md-content>

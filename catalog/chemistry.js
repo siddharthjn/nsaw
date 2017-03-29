@@ -60,8 +60,9 @@ var chemistry =[
    {img:"image/burretclamp.png",name:" Burette Clamp  ",price:"On Request ",description:" Made of al-alloy die casting, Capacity hold upto 50mm dia with 7inchmild steel chrome plated rod. "},
    {img:"image/bclamp.png ",name:"  Burette Clamp ",price:"On Request ",description:"Fisher Type die pressed sheet made of mild steel.Powder coated, to hold one burette.*Also available in Chrome plated. "},
    {img:"image/universalclamp1.png ",name:" Universal Clamp ",price:"On Request ",description:"Sheet made die pressed spring controlled cork lined jaws to hold upto 12mm to 50mm dia nut screw locked by spring Powder Coated. "},
-   {img:"image/doubleburretclamp.png",name:"Double Burette Clamp ",price:"On Request ",description:" luminium pressure die casting, powder coated, to hold two burettes"},
-   {img:"image/ ",name:" ",price:"On Request ",description:" "},
+   {img:"image/doubleburretclamp.png",name:"Double Burette Clamp ",price:"On Request ",description:" luminium pressure die casting, powder coated, to hold two burettes"}
+  
+  /*{img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},
    {img:"image/ ",name:" ",price:"On Request ",description:" "},

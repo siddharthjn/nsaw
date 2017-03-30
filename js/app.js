@@ -21,6 +21,7 @@ app = angular.module('nsawApp', ['ngMaterial']);
 
     this.tab =1;
     this.showAboutUs = true;
+    $scope.abtUs = {"background-color" : "pink"};
     this.setTab = function(newValue)
     {
       if ($mdMedia('xs') || $mdMedia('sm'))

@@ -1,8 +1,6 @@
-@media only screen and (min-width: 960px)
-{
-  .hideOnLarge{display:none;}
-
-}
+@media only screen and (min-width: 960px){.hideOnLarge{display:none;}}
+@media only screen and (max-width: 960px){md-sidenav{max-width: 200px;}}
+@media only screen and (max-width: 768px){.positionToolbar{display:none;}}
 #brand {
   padding-right : 10px;
 }
@@ -27,10 +25,6 @@
 
 .selected-item{
   height :650px;
-}
-
-@media only screen and (max-width: 960px){
-  md-sidenav{max-width: 200px;}
 }
 
   md-tabs-canvas{

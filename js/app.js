@@ -64,12 +64,6 @@ app = angular.module('nsawApp', ['ngMaterial']);
         changeButtonToWhite();
         $scope.abtUs = {"background-color" : "pink"};
       }
-      else if(this.tab == 8){
-        this.showAboutUs = false;
-        this.products = pharmacy;
-        changeButtonToWhite();
-        $scope.pharCol = {"background-color" : "pink"};
-      }
     };
 
   });
